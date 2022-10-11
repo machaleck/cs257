@@ -134,23 +134,20 @@ class Convert:
                 team_id = noc_teams[noc_name + team_name]
                 writer.writerow([athlete_id, team_id])
     
-    competitor = {}
+    athletes = {}
     with open('bigdata.csv') as bigdata_file,\
-            open('game_athlete.csv', 'w', newline='') as game_athlete_file:
+            open('age.csv', 'w', newline='') as age_file:
         reader = csv.reader(bigdata_file)
-        writer = csv.writer(game_athlete_file)
+        writer = csv.writer(age_file)
         next(reader)
         for row in reader:
+            athlete_id = row[0]
             athlete_name = row[1]
             age = row[3]
-            game_name = row[8]
-            competitor_string = athlete_name + game_name + age
-            if (competitor_string) not in competitor:
-                competitor_id = len(competitor) + 1
+            if (athlete_name) not in athletes:
+                athletes[athlete_name] = athlete_id
                 athlete_id = athletes[athlete_name]
-                game_id = games[game_name]
-                competitor[competitor_string] = athlete_id
-                writer.writerow([competitor_id, game_id, athlete_id, age])
+                writer.writerow([athlete_id, age])
     
     with open('bigdata.csv') as bigdata_file,\
             open('athlete_event.csv', 'w', newline='') as athlete_event_file:
@@ -159,12 +156,11 @@ class Convert:
         next(reader)
         for row in reader:
             event_name = row[13]
-            athlete_name = row[1]
-            game_name = row[8]
-            age = row[3]
-            competitor_string = athlete_name + game_name + age
-            medal_name = row[14]
             event_id = events[event_name]
-            competitor_id = competitor[competitor_string]
+            athlete_name = row[1]
+            athlete_id = row[0]
+            game_name = row[8]
+            game_id = games[game_name]
+            medal_name = row[14]
             medal_id = medals[medal_name]
-            writer.writerow([event_id, competitor_id, medal_id])
+            writer.writerow([athlete_id, event_id, game_id, medal_id])

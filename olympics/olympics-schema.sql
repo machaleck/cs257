@@ -17,9 +17,7 @@ CREATE TABLE noc_team (
 	team VARCHAR
 );
 
-CREATE TABLE game_competitor (
-	id SERIAL,
-	game_id INT,
+CREATE TABLE age (
 	athlete_id INT,
 	age VARCHAR
 );
@@ -41,8 +39,9 @@ CREATE TABLE cities (
 );
 
 CREATE TABLE athlete_event (
+	athlete_id INT,
 	event_id INT,
-	competitor_id INT,
+	game_id INT,
 	medal_id INT
 );
 
