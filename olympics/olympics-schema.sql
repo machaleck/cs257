@@ -1,5 +1,5 @@
 CREATE TABLE athletes (
-	id SERIAL,
+	id INT,
 	full_name VARCHAR,
 	sex VARCHAR,
 	height VARCHAR,
@@ -11,19 +11,24 @@ CREATE TABLE athlete_team (
 	team_id INT
 );
 
-CREATE TABLE noc_team (
-	id SERIAL,
-	noc VARCHAR,
-	team VARCHAR
+CREATE TABLE teams (
+	id INT,
+	team_name VARCHAR,
+	noc_id INT
 );
 
-CREATE TABLE age (
+CREATE TABLE nocs (
+	id INT,
+	noc_name VARCHAR
+);
+
+CREATE TABLE ages (
 	athlete_id INT,
 	age VARCHAR
 );
 
 CREATE TABLE games (
-	id SERIAL,
+	id INT,
 	game_name VARCHAR,
 	game_year VARCHAR
 );
@@ -34,7 +39,7 @@ CREATE TABLE games_city (
 );
 
 CREATE TABLE cities (
-	id SERIAL,
+	id INT,
 	city_name VARCHAR
 );
 
@@ -46,18 +51,18 @@ CREATE TABLE athlete_event (
 );
 
 CREATE TABLE events (
-	id SERIAL,
+	id INT,
 	sport_id INT,
 	event_name VARCHAR
 );
 
 CREATE TABLE sports (
-	id SERIAL,
+	id INT,
 	sport_name VARCHAR
 );
 
 CREATE TABLE medals (
-	id SERIAL,
+	id INT,
 	medal_name VARCHAR
 );
 

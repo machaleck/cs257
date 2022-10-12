@@ -3,7 +3,7 @@
 import csv
 
 class Convert:
-
+    
     medals = {}
     with open('bigdata.csv') as bigdata_file,\
             open('medals.csv', 'w', newline='') as medals_file:
@@ -86,21 +86,35 @@ class Convert:
                 game_id = games[game_name]
                 city_id = cities[city_name]
                 writer.writerow([game_id, city_id])
-    
-    noc_teams = {}
+
+    nocs = {}
     with open('bigdata.csv') as bigdata_file,\
-            open('noc_team.csv', 'w', newline='') as noc_team_file:
+            open('nocs.csv', 'w', newline='') as nocs_file:
         reader = csv.reader(bigdata_file)
-        writer = csv.writer(noc_team_file)
+        writer = csv.writer(nocs_file)
         next(reader)
         for row in reader:
             noc_name = row[7]
-            team_name = row[6]
-            if (noc_name + team_name) not in noc_teams:
-                noc_teams_id = len(noc_teams) + 1
-                noc_teams[noc_name + team_name] = noc_teams_id
-                writer.writerow([noc_teams_id, noc_name, team_name])
+            if noc_name not in nocs:
+                noc_id = len(nocs) + 1
+                nocs[noc_name] = noc_id
+                writer.writerow([noc_id, noc_name])
     
+    teams = {}
+    with open('bigdata.csv') as bigdata_file,\
+            open('teams.csv', 'w', newline='') as team_file:
+        reader = csv.reader(bigdata_file)
+        writer = csv.writer(team_file)
+        next(reader)
+        for row in reader:
+            team_name = row[6]
+            if team_name not in teams:
+                team_id = len(teams) + 1
+                teams[team_name] = team_id
+                noc_name = row[7]
+                noc_id = nocs[noc_name]
+                writer.writerow([team_id, team_name, noc_id])
+
     #height and weight do not differ between Olympic games in original database
     athletes = {}
     with open('bigdata.csv') as bigdata_file,\
@@ -127,18 +141,17 @@ class Convert:
         for row in reader:
             athlete_name = row[1]
             team_name = row[6]
-            noc_name = row[7]
             if (athlete_name + team_name) not in athlete_teams:
                 athlete_teams.add(athlete_name + team_name)
                 athlete_id = athletes[athlete_name]
-                team_id = noc_teams[noc_name + team_name]
+                team_id = teams[team_name]
                 writer.writerow([athlete_id, team_id])
     
     athletes = {}
     with open('bigdata.csv') as bigdata_file,\
-            open('age.csv', 'w', newline='') as age_file:
+            open('ages.csv', 'w', newline='') as ages_file:
         reader = csv.reader(bigdata_file)
-        writer = csv.writer(age_file)
+        writer = csv.writer(ages_file)
         next(reader)
         for row in reader:
             athlete_id = row[0]
