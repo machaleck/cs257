@@ -5,9 +5,9 @@ import csv
 class Convert:
     
     medals = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('medals.csv', 'w', newline='') as medals_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(medals_file)
         next(reader)
         for row in reader:
@@ -18,9 +18,9 @@ class Convert:
                 writer.writerow([medal_id, medal_name])
 
     sports = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('sports.csv', 'w', newline='') as sports_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(sports_file)
         next(reader)
         for row in reader:
@@ -31,9 +31,9 @@ class Convert:
                 writer.writerow([sport_id, sport_name])
 
     events = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('events.csv', 'w', newline='') as events_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(events_file)
         next(reader)
         for row in reader:
@@ -46,9 +46,9 @@ class Convert:
                 writer.writerow([event_id, sport_id, event_name])
     
     cities = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('cities.csv', 'w', newline='') as cities_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(cities_file)
         next(reader)
         for row in reader:
@@ -59,9 +59,9 @@ class Convert:
                 writer.writerow([city_id, city_name])
     
     games = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('games.csv', 'w', newline='') as games_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(games_file)
         next(reader)
         for row in reader:
@@ -73,9 +73,9 @@ class Convert:
                 writer.writerow([game_id, game_name, game_year])
     
     games_city = set()
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('games_city.csv', 'w', newline='') as games_city_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(games_city_file)
         next(reader)
         for row in reader:
@@ -88,9 +88,9 @@ class Convert:
                 writer.writerow([game_id, city_id])
 
     nocs = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('nocs.csv', 'w', newline='') as nocs_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(nocs_file)
         next(reader)
         for row in reader:
@@ -101,9 +101,9 @@ class Convert:
                 writer.writerow([noc_id, noc_name])
     
     teams = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('teams.csv', 'w', newline='') as team_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(team_file)
         next(reader)
         for row in reader:
@@ -117,9 +117,9 @@ class Convert:
 
     #height and weight do not differ between Olympic games in original database
     athletes = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('athletes.csv', 'w', newline='') as athletes_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(athletes_file)
         next(reader)
         for row in reader:
@@ -133,9 +133,9 @@ class Convert:
                 writer.writerow([athlete_id, athlete_name, athlete_sex, athlete_height, athlete_weight])
     
     athlete_teams = set()
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('athlete_team.csv', 'w', newline='') as athlete_team_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(athlete_team_file)
         next(reader)
         for row in reader:
@@ -148,9 +148,9 @@ class Convert:
                 writer.writerow([athlete_id, team_id])
     
     athletes = {}
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('ages.csv', 'w', newline='') as ages_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(ages_file)
         next(reader)
         for row in reader:
@@ -162,9 +162,9 @@ class Convert:
                 athlete_id = athletes[athlete_name]
                 writer.writerow([athlete_id, age])
     
-    with open('bigdata.csv') as bigdata_file,\
+    with open('athlete_events.csv') as athlete_events_file,\
             open('athlete_event.csv', 'w', newline='') as athlete_event_file:
-        reader = csv.reader(bigdata_file)
+        reader = csv.reader(athlete_events_file)
         writer = csv.writer(athlete_event_file)
         next(reader)
         for row in reader:
