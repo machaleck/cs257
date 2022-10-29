@@ -18,6 +18,6 @@ STORY: As a politician, I can see which type of natural disasters occur most fre
 
 IMPLEMENTATION: Our website provides a search function that can return all of the disasters in a particular state, sorted by year. We are also considering creating a pie chart that can display the distribution of the type of disasters in a particular state.
 
-STORY: As a political science student, I want to know the frequency that a state receives federal aid compared to the frequency of disasters in the state, so that see if aid is going to the states that are experiencing the most disasters.
+STORY: As a political science student, I want to know the frequency that a state receives federal aid compared to the frequency of disasters in the state, so that I can see if aid is going to the states that are experiencing the most disasters.
 
 IMPLEMENTATION: Our website provides a search function that can return all of the disasters in a state as well as all of the disasters that received Individual Assistance program aid and Public Assistance program aid in a particular state.
