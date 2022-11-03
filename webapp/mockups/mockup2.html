@@ -8,6 +8,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
@@ -27,9 +28,9 @@
             </div>
         </div>
     </nav>
-    <div class=".container">
-        <div class="row align-items-start">
-            <div class="col-2 p-3 bg-light">
+    <div class=".container-fluid">
+        <div class=" mx-1 row align-items-start">
+            <div class="col-2 pb-5 bg-light">
                 <h3>State</h3>
                 <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected>choose a state...</option>
@@ -37,20 +38,20 @@
                     <option value="2">Minnesota</option>
                     <option value="3">California</option>
                 </select>
-                <h3>Year</h3>
+                <h3>Start Year</h3>
                 <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected>choose a year...</option>
                     <option value="1">1900</option>
                     <option value="2">2000</option>
                     <option value="3">2100</option>
                 </select>
-
-                <h3>Incident Type</h3>
+                </select>
+                <h3>End Year</h3>
                 <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected>choose a year...</option>
-                    <option value="1">Tornado</option>
-                    <option value="2">Hurricane</option>
-                    <option value="3">Flood</option>
+                    <option value="1">1900</option>
+                    <option value="2">2000</option>
+                    <option value="3">2100</option>
                 </select>
 
                 <h3>Program</h3>
@@ -66,9 +67,100 @@
                         Public Assistance Program
                     </label>
                 </div>
+                <button type="button" class="btn btn-outline-primary btn-sm">Search</button>
             </div>
-            <div class="col-8">
+            <div class="col-4">
                 <h1>Data Analysis</h1>
+                <h3>Number of Disasters by Year</h3>
+                <canvas id="numDis" style="width:100%; max-width: 600px">
+                    <!--Example graphs taken from https://www.w3schools.com/js/tryit.asp?filename=tryai_chartjs_lines-->
+                    <script>
+                        var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+                        var yValues = [55, 49, 44, 24, 15];
+                        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                        new Chart("numDis", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "World Wine Production 2018"
+                                }
+                            }
+                        });
+                    </script>
+                </canvas>
+                <h3>Types of Disasters</h3>
+                <canvas id="typesOfDisasters" style="width:100%;max-width:700px;"></canvas>
+
+                <script>
+                    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+                    var yValues = [55, 49, 44, 24, 15];
+                    var barColors = [
+                        "#b91d47",
+                        "#00aba9",
+                        "#2b5797",
+                        "#e8c3b9",
+                        "#1e7145"
+                    ];
+
+                    new Chart("typesOfDisasters", {
+                        type: "pie",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                                backgroundColor: barColors,
+                                data: yValues
+                            }]
+                        },
+                        options: {
+                            title: {
+                                display: true,
+                                text: "World Wide Wine Production 2018"
+                            }
+                        }
+                    });
+                </script>
+
+
+            </div>
+            <div class="col-6">
+                <h3 class="pt-5">Number of Programs Enacted Per Year</h3>
+                <canvas id="numPerYear" style="width:100%; max-width: 600px">
+                    <!--Example graphs taken from https://www.w3schools.com/js/tryit.asp?filename=tryai_chartjs_lines-->
+                    <script>
+                        var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+                        var yValues = [55, 49, 44, 24, 15];
+                        var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                        new Chart("numPerYear", {
+                            type: "bar",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    backgroundColor: barColors,
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                legend: { display: false },
+                                title: {
+                                    display: true,
+                                    text: "World Wine Production 2018"
+                                }
+                            }
+                        });
+                    </script>
+                </canvas>
+
             </div>
         </div>
     </div>
