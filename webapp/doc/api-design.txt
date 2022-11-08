@@ -21,17 +21,17 @@ All of the disasters following in the dictionary will have the following fields:
     programs -- (string) which type of programs were declared after the disaster.
 
 
-REQUEST: /state
+REQUEST: /states
 
 RESPONSE: A JSON list of states sorted alphabetically. 
 
 
-REQUEST: /year
+REQUEST: /years
 
 RESPONSE: A JSON list of years sorted by year. 
 
 
-REQUEST: /incident_type
+REQUEST: /incident_types
 
 RESPONSE: A JSON list of incident types sorted alphabetically.
 
