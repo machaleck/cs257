@@ -1,19 +1,16 @@
-CREATE TABLE incident_type (
+CREATE TABLE incident_types (
     id INTEGER, 
     incident TEXT
 );
 
-CREATE TABLE declaration_title (
+CREATE TABLE states (
+    id INTEGER,
+    name TEXT
+)
+
+CREATE TABLE declaration_titles (
     id INTEGER,
     title TEXT
-);
-
-CREATE TABLE programs_declared (
-    id INTEGER, 
-    ih_program INTEGER, 
-    ia_program INTEGER, 
-    pa_program INTEGER,
-    hm_program INTEGER
 );
 
 CREATE TABLE years (
@@ -21,13 +18,17 @@ CREATE TABLE years (
     year INTEGER
 );
 
-CREATE TABLE disaster (
+CREATE TABLE disasters (
     id INTEGER, 
     incident_type_id INTEGER,
+    state_id INTEGER,
     declaration_title_id INTEGER,
     programs_declared_id INTEGER, 
-    start_year_id INTEGER, 
-    end_year_id INTEGER
+    year INTEGER, 
+    ih_program INTEGER, 
+    ia_program INTEGER, 
+    pa_program INTEGER,
+    hm_program INTEGER
 );
 
 

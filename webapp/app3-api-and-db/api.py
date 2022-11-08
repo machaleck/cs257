@@ -21,68 +21,55 @@ def get_connection():
                             user=config.user,
                             password=config.password)
 
-@api.route('/authors/') 
-def get_authors():
-    ''' Returns a list of all the authors in our database. See
-        get_author_by_id below for description of the author
-        resource representation.
+@api.route('/state/') 
+def get_states():
+    ''' Returns a list of all the states in our database.
 
         By default, the list is presented in alphabetical order
-        by surname, then given_name. You may, however, use
-        the GET parameter sort to request sorting by birth year.
+        by state name.
 
-            http://.../authors/?sort=birth_year
+            http://.../state/
 
         Returns an empty list if there's any database failure.
     '''
-    query = '''SELECT id, given_name, surname, birth_year, death_year
-               FROM authors ORDER BY '''
+    query = '''SELECT states.name
+               FROM states ORDER BY states.name'''
 
-    sort_argument = flask.request.args.get('sort')
-    if sort_argument == 'birth_year':
-        query += 'birth_year'
-    else:
-        query += 'surname, given_name'
-
-    author_list = []
+    state_list = []
     try:
         connection = get_connection()
         cursor = connection.cursor()
         cursor.execute(query, tuple())
         for row in cursor:
-            author = {'id':row[0],
-                      'given_name':row[1],
-                      'surname':row[2],
-                      'birth_year':row[3],
-                      'death_year':row[4]}
-            author_list.append(author)
+            state = {'name':row[0]}
+            state_list.append(state)
         cursor.close()
         connection.close()
     except Exception as e:
         print(e, file=sys.stderr)
 
-    return json.dumps(author_list)
+    return json.dumps(state)
 
-@api.route('/books/author/<author_id>')
-def get_books_for_author(author_id):
-    query = '''SELECT books.id, books.title, books.publication_year
-               FROM books, authors, books_authors
-               WHERE books.id = books_authors.book_id
-                 AND authors.id = books_authors.author_id
-                 AND authors.id = %s
-               ORDER BY books.publication_year'''
-    book_list = []
-    try:
-        connection = get_connection()
-        cursor = connection.cursor()
-        cursor.execute(query, (author_id,))
-        for row in cursor:
-            book = {'id':row[0], 'title':row[1], 'publication_year':row[2]}
-            book_list.append(book)
-        cursor.close()
-        connection.close()
-    except Exception as e:
-        print(e, file=sys.stderr)
+# @api.route('/books/author/<author_id>')
+# def get_books_for_author(author_id):
+#     query = '''SELECT books.id, books.title, books.publication_year
+#                FROM books, authors, books_authors
+#                WHERE books.id = books_authors.book_id
+#                  AND authors.id = books_authors.author_id
+#                  AND authors.id = %s
+#                ORDER BY books.publication_year'''
+#     book_list = []
+#     try:
+#         connection = get_connection()
+#         cursor = connection.cursor()
+#         cursor.execute(query, (author_id,))
+#         for row in cursor:
+#             book = {'id':row[0], 'title':row[1], 'publication_year':row[2]}
+#             book_list.append(book)
+#         cursor.close()
+#         connection.close()
+#     except Exception as e:
+#         print(e, file=sys.stderr)
 
-    return json.dumps(book_list)
+#     return json.dumps(book_list)
 

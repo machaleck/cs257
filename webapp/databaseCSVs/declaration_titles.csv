@@ -1,0 +1,2235 @@
+1,Tornado
+2,Tornado & Heavy Rainfall
+3,Flood
+4,Floods
+5,Forest Fire
+6,Severe Hardship
+7,Flood & Erosion
+8,Earthquake
+9,Hurricanes
+10,Hurricane
+11,Volcano
+12,Flood & Tornado
+13,Hurricane & Floods
+14,Hurricane & Flood
+15,Floods & Rains
+16,"Hurricane, Torrential Rain & Floods"
+17,Tornadoes
+18,Severe Storm
+19,Wind Storm
+20,Storm & Flood
+21,Storm
+22,Tidal Wave
+23,"Hurricane, Rain, Wind, Hail & Floods"
+24,Floods & Hurricane
+25,Tornadoes & Floods
+26,"Tornadoes, Rain, Hail & Floods"
+27,Heavy Rainstorms & Flood
+28,Heavy Rainstorms & Floods
+29,Hurricane & Severe Storm
+30,Hurricane Dot
+31,Heavy Rains & Floods
+32,Earthquakes & Volcanic Disturbances
+33,Severe Weather Conditions
+34,Tidal Waves
+35,"Heavy Rains, Hail, Floods & Tornadoes"
+36,Fires
+37,Hurricane Donna
+38,Floods & Tornadoes
+39,Hurricane Carla
+40,Fire (Los Angeles County)
+41,"Severe Storms, High Tides & Flooding"
+42,"Severe Storm, High Tides & Flooding"
+43,Chlorine Barge Accident
+44,Severe Storms
+45,Severe Storms & Flooding
+46,Typhoon Karen
+47,Abnormally High Tides
+48,"Severe Storms, Heavy Rains & Flooding"
+49,Heavy Rains & Flooding
+50,Typhoon Olive
+51,Hurricane Cindy
+52,Drought & Impending Freeze
+53,Flood Due To Broken Dam
+54,Flooding
+55,Seismic Sea Wave
+56,Extreme Drought Conditions
+57,Hurricane Cleo
+58,Hurricane Dora
+59,Hurricane Hilda
+60,Typhoon Louise
+61,Severe Winter Storm
+62,Tornadoes & Severe Storms
+63,"Tornadoes, Severe Storms & Flooding"
+64,Tornadoes & Flooding
+65,Water Shortage
+66,Hurricane Betsy
+67,Typhoon & High Tides
+68,Forest Fires
+69,Hurricane Beulah
+70,Severe Ice Storm
+71,Tornado & Severe Storm
+72,"Severe Storms, High Winds & Flooding"
+73,Hurricane Gladys
+74,Hurricane Camille
+75,Heavy Rains & Landslide
+76,"Heavy Snowmelt, Rains & Flooding"
+77,"Severe Storms, Ice Jams & Flooding"
+78,"Heavy Rains, Tornadoes & Flooding"
+79,"Tornadoes, Windstorms & Flooding"
+80,Island Lake Fire
+81,Grass;Amland & Forest Fire
+82,Hurricane Celia
+83,Heavy Rains & Flash
+84,Forest & Brush Fires
+85,San Fernando Earthquake
+86,"Heavy Rains, Melting Snows & Flooding"
+87,Storms & Flooding
+88,Storms & Tornadoes
+89,Freeze
+90,Broken Bow Fire
+91,Typhoon Amy
+92,Hog River Fire
+93,Delta Junction Fire
+94,"Heavy Rains, High Winds & Flooding"
+95,Hurricane Edith
+96,"Winds, Flooding, Mudslides"
+97,Severe Storms & Extensive Flooding
+98,Coastal Storms
+99,Severe Storm & Freezing
+100,Tropical Storm Agnes
+101,Flooding Caused By Levee Break
+102,Toxic Algae In Coastal Waters
+103,"High Winds, Tornadoes And Flooding"
+104,"High Winds, Wave Action & Flooding"
+105,Dam Failure
+106,"Severe Storms, Snow Melt & Flooding"
+107,"Heavy Rains, Snowmelt And Flooding"
+108,Chugach Fire
+109,Mudslides
+110,Severe Storms & Tornadoes
+111,"Severe Storms, Flooding, & Tornadoes"
+112,"Severe Storms, Flooding, & Landslides"
+113,Flooding & Landslides
+114,Prewitt Creek Fire
+115,Perry Canyon Fire
+116,Goat Creek Fire
+117,Rocky Creek Fire
+118,Orindale Draw Fire
+119,Pleasant Valley Fire (No. 125)
+120,Doe Creek Fire
+121,Hillsview Fire
+122,"Severe Storms, Tornadoes & Flooding"
+123,Fire (City Of Chelsea)
+124,"Severe Storms, Snowmelt & Flooding"
+125,"Severe Storms, Flooding & Landslides"
+126,"Heavy Rains, Snowmelt & Flooding"
+127,Guadaluipita Fire
+128,Freeze In Spawning Areas Of Red Salmon
+129,Argle & Booms Canyon
+130,"Drought, Livestock Losses"
+131,Impact Of Drought
+132,Power Failure
+133,Hurricane Carmen
+134,Drought
+135,Floodng (Nys Barge Canal)
+136,"Severe Storms, Landslides & Flooding"
+137,"Severe Storms, High Winds & High Tides"
+138,High Winds
+139,"Tornadoes, High Winds & Heavy Rains"
+140,"Tornadoes, High Winds & Hail"
+141,Flooding From Rains & Snowmelt
+142,"Rains, Showmelt, Storms & Flooding"
+143,"Severe Storms, Flooding & Tornadoes"
+144,"Heavy Rains, High Winds, Hail & Tornadoes"
+145,Custer State Park
+146,"Winds, Tornadoes, Heavy Rains & Flooding"
+147,"Heavy Rains, Tornadoes & Flash Floods"
+148,Tropical Storm Elioise
+149,"High Winds, Heavy Rains & Flooding"
+150,"Storms, Rains, Landslides & Flooding"
+151,"Earthquake, Seismic Waves & Volcanic Eruption"
+152,Fire & Freezing
+153,"Severe Storms, Tornadoes, Icing & Flooding"
+154,"Ice Storm,Severe Storms & Flooding"
+155,"Severe Storms, Icing, Wind & Flooding"
+156,Ice Storms & High Winds
+157,Severe Flooding
+158,Typhoon Pamela
+159,"Dam Collapse, Flooding"
+160,Typhoons Pamela & Therese
+161,"Severe Storms, Tornadoes  & Flooding"
+162,Flash Flooding & Mudslides
+163,Flash Flooding
+164,"High Winds, Flash Floods"
+165,Severe Storms & Flash Flooding
+166,Hurricane Belle
+167,Huntersville
+168,Tate
+169,Galvin Line
+170,Little Swan
+171,Tower
+172,Tamarack
+173,"Flooding, Tropical Storm Kathleen"
+174,Mcgregor Fire
+175,Urban Fire
+176,Ice Conditions
+177,Snowstorms
+178,Severe Winter Weather
+179,Drought & Freezing
+180,Shrimp Loss Due To Cold Weather
+181,Barker Fire
+182,Pattee Canyon Fire
+183,Baxter State Fire
+184,Scarface Fire
+185,Wilson Creek Fire
+186,"Winds, Hail & Rain"
+187,"Severe Storms,Mudslides, & Flooding"
+188,Blizzards & Snowstorms
+189,Blizzard & Snowstorms
+190,"Coastal Storms, Flood, Ice & Snow"
+191,"Coastal Storms, Mudslides & Flooding"
+192,"High Winds, Tidal Surge & Coastal Flooding"
+193,Snow & Ice
+194,"Storms, Ice Jams, Snowmelt & Flooding"
+195,"Severe Storms, Flooding & Mudslides"
+196,"Severe Storms, Flooding, Hail & Tornadoes"
+197,"Chemical Waste, Love Canal"
+198,Grave Creek Fire
+199,Tropical Storm Carmen
+200,Deer Creek Canyon Fire
+201,Landslides
+202,Brush Fires
+203,Ice Jam & Flooding
+204,"Rain, Flooding, Mudslide"
+205,"Storms, Tornadoes, Floods"
+206,"Storms, Wind, Flooding"
+207,"Tornadoes, Torrential Rain & Flooding"
+208,Pea Vine Peak Fire
+209,High Winds & Tornadoes
+210,"Severe Storms,Flash Floods"
+211,Storms & Flash Floods
+212,Salmon Creek Fire
+213,Bridge Creek Fire
+214,Sisters Fire
+215,"Heavy Rains, Flash Floods & Mud Flows"
+216,Pine Grove Fire
+217,West Fork - Barker's Creek Fire
+218,20-Mile Fire
+219,Hurricane David
+220,Hurricane Frederic
+221,"Hurricane David, Tropical Storm Frederic"
+222,Tornado & Severe Storms
+223,"Flooding, Mudslides & Landslides"
+224,Seawave Action & Flooding
+225,"Storms, High Tides, Mudslides & Flooding"
+226,"Torrential Rain, High Tide & Winds"
+227,"Severe Storms, High Surf & Flooding"
+228,"Severe Storms, Mudslides & Flooding"
+229,"Storms, Flood, Mudslides & Tornadoes"
+230,"Spooner Fire, Washburn Co."
+231,Undocumented Aliens
+232,"Volcanic Eruption, Mt. St. Helens"
+233,Bear Trap Fire
+234,Hurricane Allen
+235,Red Tide-Toxic Algae
+236,Tropical Storm Danielle
+237,Levee Break & Flooding
+238,Brush & Timber Fires
+239,Typhoon Dinah
+240,"Sewer Explosion, Toxic Waste"
+241,Typhoon Esau
+242,Round Lake Fire
+243,Little Valley Fire
+244,Peavine Peak
+245,Fire
+246,"Severe Storms, Flood, Mudslides & High Tide"
+247,Severe Storms And Flooding
+248,Flash Flood Due To Dam Failure
+249,Threat Of Flooding At Spirit Lake
+250,Levee Break
+251,Typhoon Iwa
+252,"Coastal Storms, Floods, Slides & Tornadoes"
+253,Kilauea Fire
+254,"Severe Storms, Flooding &  Tornadoes"
+255,"Severe Storms, Flooding &  Mudslides"
+256,Coalinga Earthquake
+257,"Severe Storms, Tornadoes, And Flooding"
+258,Silver City Fire
+259,Hurricane Alicia
+260,"Severe Storms,Flooding And Tornadoes"
+261,Severe Freezing Weather
+262,Ice Jams And Flooding
+263,Freezing Temperatures
+264,Coastal Storms & Flooding
+265,"High Winds, Tornadoes & Flooding"
+266,"Severe Storms, Tornadoes, Hail & Floods"
+267,"Severe Storms, Mudslides, Landslides & Flooding"
+268,North Hills Fire
+269,La Pine/Wampus Butte Fire
+270,Hawks Creek Fire
+271,Houghton Creek Number-2
+272,Hurricane Diana
+273,Tropical Storm Klaus
+274,Heavy Rain & High Winds
+275,Severe Freeze
+276,Snow Melt & Ice Jams
+277,Aster Fire
+278,Bonell Fire
+279,Perry Fire
+280,Tomoka Fire
+281,"Storms, Mud/Land Slides, Flooding"
+282,"Severe Storms, High Winds & Tornadoes"
+283,Hidden Valley Lake Fire
+284,Lexington Fire
+285,Flint Hill Fire
+286,Seven Sisters Fire
+287,"Grass, Wildlands, & Forest Fires"
+288,"Severe Storms, Hail & Flooding"
+289,Tonasket/Baker Fire
+290,Hurricane Elena
+291,Hurricane Gloria
+292,Hurricane Juan
+293,Hurricane Kate
+294,"Heavy Rains, Landslides & Flooding"
+295,"Severe Storms, Rains & Tornadoes"
+296,Topsail Fire
+297,Typhoon Lola
+298,"Heavy Rains, Flooding & Mudslides"
+299,"Severe Storms, Flooding"
+300,Severe Storm & Flooding
+301,"Coastal Storm, High Winds & Waves"
+302,Typhoon Kim
+303,Hurricane Tusi
+304,Typhoon Orchid
+305,Bland Mountain Fire
+306,Storms & Flash Flooding
+307,Battle Mountain Fire
+308,Sykes Creek Fire
+309,Frozen Creek Fire
+310,Stanislaus Complex Fire
+311,Savage Creek Fire
+312,Methane Gas Seepage
+313,Earthquake & Aftershocks
+314,Shady Lane Fire
+315,Typhoon Lynn
+316,Typhoon Nina
+317,Tropical Storm Roy
+318,Typhoon Roy
+319,Albany Fire
+320,West Berry Trail Fire
+321,"Rain, Winds, & Tornadoes"
+322,Walker Mountain Fire
+323,Dinkleman Fire
+324,Forty Niner Fire
+325,Wildfires
+326,Hurricane Gilbert
+327,Dike Failure & Flash Flooding
+328,Severe Freezing
+329,Sunnyside Fire
+330,Tropical Storm Allison
+331,Severe Storms & High Winds
+332,Hurricane Hugo
+333,Loma Prieta Earthquake
+334,Typhoon Koryn
+335,Hurricane Ofa
+336,"Severe Storms, Tornaodes & Flooding"
+337,"Lava Flow, Kilauea Volcano"
+338,Dude Fire
+339,Tok River Fire
+340,Aubrey Hall Fire
+341,Swedlund Fire
+342,Old Stage Fire
+343,Typhoon Mike
+344,Typhoon Owen
+345,Typhoon Russ
+346,Severe Storms & High Tides
+347,"Heavy Snow, Ice Jams & Flooding"
+348,Appel Mountain Fire
+349,Severe Storms & Hail
+350,Hurricane Bob
+351,Hurricane Bob & Flooding
+352,Hurricane Bob & Severe Storms
+353,Eastern Washington Fires
+354,Oakland Hills Fire
+355,Coastal Storm
+356,Typhoon Yuri
+357,Typhoon Zelda
+358,Hurricane Val
+359,Severe Thunderstorms
+360,Ice Storm
+361,Severe Coastal Storm
+362,Tropical Storm Axel
+363,Typhoon Axel
+364,"Rain/Snow/Wind Storms, Flooding, Mudslides"
+365,"Heavy Rains, Ice Jams & Flooding"
+366,Fire During A Period Of Civil Unrest
+367,Yellow Line Fire
+368,Sage Flats Fire
+369,"Thunderstorms, Hail & Flooding"
+370,Lone Pine Fire
+371,East Evans Creek Fire
+372,Skookum Fire
+373,Hurricane Andrew
+374,Typhoon Omar
+375,Old Gulch & Fountain Fires
+376,Excessive Rain & Hail
+377,Hurricane Iniki
+378,Water Contamination
+379,"Wind Storms, Tornadoes & Hail"
+380,"High Winds, Heavy Rains & Tornadoes"
+381,Severe Thunderstorms & Tornadoes
+382,Typhoon Gay
+383,Winter Storm & Coastal Flooding
+384,"Coastal Storm, High Tides, Heavy Rain, & Flooding"
+385,Winter Coastal Storm
+386,Severe Coastal Storm & Flooding
+387,"Severe Winter Storm, Mud & Land Slides, & Flooding"
+388,Severe Storms & High Wind
+389,"Tornadoes, Flooding, High Winds & Tides, Freezing"
+390,"Severe Snowfall, Winter Storm"
+391,"Blizzards, Severe Winds & Snowfall, Coastal Storm"
+392,Severe Snowfall & Winter Storm
+393,"Blizzards, High Winds & Record Snowfall"
+394,"Severe Winds & Blizzard, Record Snowfall"
+395,Severe Blizzard
+396,Ice Jams & Flooding
+397,Explosion At World Trade Center
+398,"Heavy Rain, Snowmelt, Ice Jams & Flooding"
+399,"Heavy Rain, Snowmelt & Flooding"
+400,Desert Fire
+401,Kingman Fire
+402,Ravine Fire Complex
+403,Fence Fire
+404,Numerous Fires
+405,Extreme Fire Hazard
+406,Hurricane Emily
+407,Denahol/Baracho Fire
+408,Mcdaniel Fire
+409,Earthquakes
+410,"Fires, Mud/Landslides, Flooding, Soil Erosion"
+411,Severe Storms And Tornadoes
+412,Northridge Earthquake
+413,"Severe Winter Storm, Freeezing Rain And Sleet"
+414,Severe Winter Ice Storm
+415,"Severe Winter Ice Storm,Flash Flooding"
+416,"Severe Winter Storms, Freezing, Flooding"
+417,Severe Winter Storms
+418,"Severe Ice Storms, Flooding"
+419,"Severe Weather, Freezing Rain, Sleet, Snw"
+420,Severe Winter Weather And Ice Storms
+421,Severe Ice Storms And Flooding
+422,"Severe Storms, Tornado, And Flooding"
+423,"Tornadoes, Flooding, And Severe Storms"
+424,Extensive Rainfall And Flash Flooding
+425,"Severe Storms, Tornadoes, Flooding"
+426,Dolan Fire
+427,Severe Snow And Ice Storm
+428,Severe Deep Freeze
+429,Flooding And Ice Jams
+430,Monarch Fire
+431,Perkins/Coyote Fire Complex
+432,Jurassic Fire
+433,Oracle Junction Fire
+434,Wake Complex Fire
+435,South Canyon Fire
+436,"Tornadoes, Flooding Torrential Rain(Trop Storm Alberto)"
+437,Tropical Storm Alberto
+438,Severe Storms And Flooding (Tropical Storm Alberto)
+439,Memphis Fire
+440,Riverside Wildfire
+441,Rosborough Complex Fire
+442,Tyee Wildfire
+443,Hatchery Creek/Round Mountain Fire Complex
+444,White Salmon Fire
+445,The El Nino (The Salmon Industry)
+446,Crystal Peak Fire
+447,Dry Canyon Ii
+448,Edgar Fire
+449,Stagebarn Canyon Fire
+450,Little Wolf Fire
+451,Wlderness Complex   (Libby Complex)
+452,Hull Mountain Fire
+453,High Surf And Wave Action
+454,Severe Thunderstorms And Flooding
+455,"Heavy Rains, Tornados, Flooding, High Winds"
+456,Tropical Storm Gordon Tornadoes Flooding Rainfall
+457,"Severe Winter Storms, Flooding, Landslides, Mud Flows"
+458,"Severe Winter Storms, Flooding Landslides, Mud Flow"
+459,Explosion At Federal Courthouse In Oklahoma City
+460,"Severe Storms, Flooding And Tornadoes"
+461,"Severe Storms, Flooding, And Ground Saturation"
+462,"Severe Storms, Tornadoes, Hail, Flooding"
+463,Geronimo Fire
+464,"Tornadoes, Severe Winds, Hail"
+465,"Severe Storms, Hail, Flooding, And Tornadoes"
+466,"Tornadoes, Severe Storms And Flooding"
+467,Rio Fire
+468,"Severe Storms, Heavy Rains, Flooding, Mudslides"
+469,Hurricane Erin
+470,"Excessive Rainfall, Flooding"
+471,"Severe Thunderstorms, Winds, Flooding, Tornadoes, And Heat"
+472,Rocky Point/Cranberry Bog Fire
+473,Russell Fire
+474,Hurricane Marilyn
+475,Hurricane Opal
+476,"Severe Storms, Flooding, High Winds"
+477,"Severe Storms, High Wind, And Flooding"
+478,"Excessive Rainfall, High Winds, And Flooding"
+479,"High Winds, Freezing Rain, Heavy Snowfall"
+480,Blizzard Of 96 (Severe Snow Storm)
+481,Blizzard Of 96
+482,Blizzard 0f 96
+483,"Flooding, High Winds, And Wind Driven Rain"
+484,"High Winds, Severe Storms And Flooding"
+485,"High Winds, Severe  Storms And Flooding"
+486,North Texas Complex Fire
+487,Extreme  Fire Hazard
+488,Stillwater Complex Fires
+489,"Severe Storms, Flooding, And Ice Jams"
+490,"Severe Winter Storms, Ice And Flooding"
+491,Winter Storm
+492,Alva Complex Fire
+493,Sperry Skiatook Barnsdall Complex Fires
+494,Northwest Amarillo Fire
+495,Bowie Fire
+496,Fillibuster Fire
+497,Clyde Fire
+498,Seven-One-Seven Fire
+499,Junction Fire
+500,Choo Choo Fire
+501,Lakeview Fire
+502,Windy Fire
+503,Phamtom Lake Fire
+504,Riney Road Fire
+505,Leuders  Fire
+506,Jeter Road Fire
+507,Colony Creek Fire
+508,Zion Valley Fire
+509,Nas Fire
+510,Gainesbend Fire
+511,Sperry Owasso Complex Fire
+512,Duncanville Fire
+513,Little Axe Fire
+514,Caddo Fire
+515,"Severe Storms, Ice Jams, Flooding"
+516,Triangle  Complex Fire
+517,Buckle-L Fire
+518,Velma Fire
+519,Doouble Mountain Fire
+520,Caddo Ii Fire
+521,Cartwright Fire
+522,Crum Fire
+523,Godley Road Fire
+524,Livington - 7 Oaks Fire
+525,Exxon Fire
+526,Severe Storms  And High Winds
+527,171 Fire
+528,Hamby Fire
+529,Oil Patch Fire
+530,Galaxy Fire
+531,Ivan Fire
+532,Rough Creek Complex Fire
+533,West Breckenridge Fire
+534,Worsham Complex Fire
+535,Eyed Fire
+536,Oak Creek Fire
+537,Old Fred Fire
+538,Thomas Road Fire
+539,Knight Fire
+540,Devil's Hollow Fire
+541,Eureka Fire
+542,Old Prospect Fire
+543,Doc Howard Fire
+544,Pitchfork Fire
+545,Little Cypress Fire
+546,Kirby Road Complex Fire
+547,Beaver Pond Fire
+548,Oakhurst-Sandsprings Fire
+549,North Memphis Fire
+550,Sportsman's World Complex Fire
+551,Lone Fire
+552,Hondo Fire
+553,"Severe Storms, Flooding, Ice Jams, Soil Saturation"
+554,Buffalo Creek Fire
+555,"Severe Storms, Mudslides, Flooding"
+556,"Flooding, Heavy Winds"
+557,Puducah Fire
+558,Flooding And Severe Storms
+559,Millers Reach #2 Fire
+560,"Severe Storms,Flooding, &  Ice Jams"
+561,Wildland Fires
+562,"Flooding, Severe Storms"
+563,Peaks Fire Complex
+564,Cottonwood Fire
+565,Autumn Hill Fire
+566,Extreme Rainfall And Flooding
+567,Hurricane Bertha
+568,Laacey Fire
+569,"Severe Storms, Flooding, And Tornadoes"
+570,Belli Ranch Fire
+571,Bowie Fire (Spokane)
+572,Wheeler Fire (Wheeler)
+573,Lee Fire
+574,"Heavy Rains, High Winds, Flooding, And Slides"
+575,"Severe Storms, And Flooding"
+576,Skeleton/Evans West Fire   (Deschutes)
+577,Ruby Complex Fire  (Elko)
+578,Shepard Mountain Fire (Carbon Cty)
+579,Hurricane Fran And Associated Severe Storm Cond
+580,Hurricane Fran
+581,Hurricane Hortense
+582,"Hurricane Fran And Associated Heavy Rains,Flooding Highwind"
+583,Flooding Associated With Tropical Depression Fran
+584,Severe Storms And Flooding Assoc With Tropical Storm Fran
+585,Severe Winds And Flooding Assoc With Hurricane Fran
+586,Tropical Storm Josephine
+587,Severe Firestorms
+588,Extreme Weather Conditions And Flooding
+589,"Severe Storm,Heavy Rains, Flooding, High Winds"
+590,Extreme Weather Conditons And Flooding
+591,Fall Northeaster Rainstorm
+592,Major Water Main Break
+593,"Severe Storms, Flooding, Heavy Rains, High Winds"
+594,Gas Leak Explosion
+595,"Prolonged And Heavy Rains, High Surf,Flooding,Land/Mud Slide"
+596,"Severe Storms High Winds, Rain And Flooding"
+597,"Flooding, Land, Mud Slides, High Winds,Severe Storms"
+598,"Severe Thunderstorms, High Winds,Rain, Flooding"
+599,"Severe Storms, Flooding, Mud And Landslides"
+600,Severe Winter Storms And Blizzard Conditions
+601,"Severe Winter Storms, Land & Muds Slides,Flooding"
+602,"Severe Winter Storms, Land And Mudslides, Flooding"
+603,"Severe Storm, Flooding, And Tornadoes"
+604,"Heavy & Wind Driven Rain, High Winds,Flooding,Slides"
+605,"Heavy Rains, Tornadoes, Flooding, Hail, High Winds"
+606,Typhoon Fern
+607,Severe  Winter Storm
+608,"Heavy Rains, Snow Melt, Flooding, Land & Mud Slides"
+609,"Severe Flooding,Severe Winter Storms, Snowmelt, Spring Rains"
+610,"Severe Flooding, Sever Winter Storms,Heavy Rains High Winds"
+611,"Severe Flooding, High Winds,Severe Storms"
+612,"Severe Storms, Snowmelt, Land/Mud Slides, Flooding"
+613,"Severe Storms, Tornadoes,And Flooding"
+614,Benton City Fire
+615,"Fl00ding, Snow Melt"
+616,"Severe Storms,Ice Jams, Snow Melt, Flooding"
+617,"Severe Storms, Flooding,High Winds, Assoc With Hurr Danny"
+618,"Severe Storms, Heavy Rain, Flash Floods, Flooding, Mudslides"
+619,Tum Tum Fire
+620,"Severe Storms, Tornadoes, High Winds, Flooding"
+621,Olympia Command Fire
+622,"Severe Snow Storms, Rain, And Strong Winds"
+623,Severe Snowstorms
+624,Super Typhoon Keith
+625,"Typhoon Paka, Torrential Rains, High Winds, High Surf"
+626,Super Typhoon Paka
+627,"Severe Storms, High Winds, Tornadoes, And Flooding"
+628,"Severe Ice Storms, Rains And High Winds"
+629,"Severe Ice Storms, Rain, High Winds And Flooding"
+630,"Severe Ice Storm, Rains And High Winds"
+631,Severe Winter Storms And Flooding
+632,"Severe Winter Storms, High Winds, And Flooding"
+633,Hawaiian Beaches Subdivision Fire
+634,"Severe Winter Coastal Storm, High Winds, Flooding"
+635,Leilani Estates Subdivision Fire   (Hawaii Co)
+636,"Drought, Crop Losses"
+637,Guam Tiyan Toto Fire Complex
+638,"Severe Storms Tornadoes, And Flooding"
+639,Tornadoes And Severe Storms
+640,Severe Drought
+641,"Severe Storms, Tornadoes And Flooding"
+642,"Tornadoes, Flooding High Winds"
+643,Camp Wood Hills Fire
+644,Cibolo Creek Fire
+645,"Flooding, Severe Storms, Tornadoes"
+646,"Palm Coast 98 Fire Complex   (St.johns, Seminole & Flager"
+647,Debruce Grain Elevator Explosion  (Sedgwick Cty)
+648,"Flooding, Ground Saturation,Severe Storms"
+649,Jacksonville Fire Complex
+650,County Line Fire
+651,Paradise Fire
+652,San Pedro Day Fire
+653,Waldo Southeast Fire
+654,Race Track - Waldo Fire
+655,Waccassa Fire Complex
+656,Suwanee Fire Complex
+657,Bunnelle Fire Complex
+658,Calooshattchee Fire Complex
+659,Chippola River District-Gulf County-Depot Creek Fire
+660,"Severe Storms, Straight Line Winds, And Tornadoes"
+661,Heavy Rains And Flooding
+662,Osha Canyon Complex  (Colfax)
+663,Withlacootchee Fire Complex
+664,Orlando Fire Complex
+665,Cash Johnson Fire
+666,Extreme Fire Hazards
+667,Park Lake Fire
+668,Sterling Fire
+669,Mazamec Fire
+670,City Lake Fire
+671,"Severe Storms And Tornadoes, And Flooding"
+672,Brazeline Fire
+673,Elm Branch Fire
+674,"Severe Storms,Straigh Line Winds, Tornadoes,Rain,And Floodi"
+675,Live Oak Fire
+676,Herron Fire
+677,Wa - Cleveland Fire - 07/28/98
+678,Bear Mountain Fire Complex  (Mc Curtain)
+679,White Bluff Fire
+680,Piney Creek Fire
+681,Rocky Branch Fire
+682,Weatherford Fire
+683,Highway Lake Fire
+684,Crossroads Fire
+685,North Pacific Fire
+686,Union Chapel Ii Fire
+687,Denson Springs Fire
+688,Severe Storms And High Winds
+689,Molokai Fire 98  (Maui)
+690,Tropical Storm Charley
+691,Hurricane Bonnie
+692,Fm 362 Fire
+693,Ball Park Fire   (Cowlitz)
+694,Frontage Fire
+695,Lindale Fire
+696,Blanton Fire
+697,Wood Branch Village Fire
+698,Hurricane Earl
+699,Speegleville Fire
+700,Frazier Creek Fire  (Leflore)
+701,Potosi Fire
+702,Sugarloaf Creek Fire   (Leflore)
+703,Mexico Fire
+704,"Ny - Severe Wx, Sept 7, 1998"
+705,Hurricane Georges (Direct Federal Assist First 72 Hrs)
+706,Hurricane Georges/Ts Frances
+707,Hurricane Georges - Texas
+708,Hurricane Georges - 18 Sep 98
+709,Hurricane Grorges
+710,Tucannon Fire   (Columbia)
+711,Hurricane Georges
+712,Wa Storms & Flooding 5/26/98
+713,Wa Landslide 3/6/98
+714,Tx-Flooding 10/18/98
+715,Ks-Flooding  10/31/98
+716,Tropical Storm Mitch
+717,Il-Winter Storm  1/1/99
+718,Snow
+719,In-Winter Storm 12/23/98
+720,Riv-Severe Winter Wx 12/23/98
+721,"Severe Storms, Tornadoes And High Winds"
+722,Me - Flooding 10/16/98
+723,Ar Severe Weather 1-21-99
+724,"Severe Winter Storms, Ice And Freezing Rain"
+725,Mi - Severe Weather 1/2 /99
+726,Ca-Citrus Crop Damage 2/2/99
+727,Wy - Winter Storm  10/5/98
+728,Fischer Fire
+729,Tn - Wildfires 4/13/99
+730,Fl-Fires 04/13/99
+731,Okeechobee Fire Complex
+732,Fl-Fires 04/15/99
+733,"Ok, Tornadoes 5/3/99"
+734,Mi - Tower Lake Mountain Fire - 05/06/1999
+735,"Tx, Tornado 5/4/99"
+736,Jacksonville District Fire
+737,Co-Flooding 4/30/99
+738,Severe Storms And Flash Flooding
+739,"Severe Storms, Flooding, Snow, Ice, Ground Saturation, Lanslides, Mudslides, And Tor"
+740,Az - Rainbow Fire - 06/11/1999
+741,Reservoir Fire
+742,Mira Loma Fire
+743,Nv - Flash Flooding 7/8/99
+744,Fishel Creek Fire Complex
+745,"Severe Storms, Winds, And Flooding"
+746,Unionville Fire
+747,Osino Fire
+748,West Point Fire Complex
+749,Wi-Flood-07/20/99
+750,"Tornado, Severe Thunderstorms, And Hail"
+751,Reese Creek Fire
+752,Hurricane Bret
+753,Red Rock Fire
+754,Topeka Fire
+755,Severe Ice Storm And Flooding
+756,Tx-Greenville Fire
+757,Tx-Alcoa Fire
+758,Midlothian Fire
+759,Dalby Springs Fire
+760,Ca-Wildfires-08/25/1999
+761,Hurricane Dennis
+762,Pa - Flooding 8/20/99
+763,Virginia Tropical Storm Dennis 08/27/99
+764,Hurricane Floyd Emergency Declarations
+765,Beaver Creek Fire
+766,Hurricane Floyd Major Disaster Declarations
+767,Al - Macintosh Fire - 09/18/99
+768,Al - Russellville Fire - 09/18/99
+769,Al - Fayette Fire - 09/18/99
+770,Al - Chelsea Fire - 09/18/99
+771,Al - Jackson Farms Fire - 09/18/99
+772,Al - Lookout Mountain Fire - 09/18/99
+773,Williams Ranch Fire
+774,"Severe Ice Storms, Flooding And Heavy Rains"
+775,Tropical Depression Dennis Pa
+776,Hurricane Floyd
+777,Al - Martin School Fire - 09/18/1999
+778,Tropical Storm Irene - Florida
+779,Tropical Storm Floyd
+780,Fl-Hurricane Irene-Dr-Req
+781,Bluestem Fire
+782,Hurricane Lenny
+783,"Ky,  Wildfires #001"
+784,Jordan Creek Fire
+785,Hurricane Lenny Major Declaration
+786,Warehouse Fire.
+787,Saddleback Fire
+788,Purgatory Fire
+789,Bob's Trail Fire
+790,"Tornadoes, Severe Storms, Torrential Rains, And Flash Flooding"
+791,Nv - Spring Creek Fire - 1999
+792,Severe Storms/Tornados
+793,Severe Winter Storms And Avalanches
+794,"Flooding, Severe Storms, And Landslides"
+795,Two Fork Fire
+796,Camden Fire Complex
+797,Hawaii County Fire Complex
+798,Fl - Merritt Fire
+799,Rio Grande Fire Complex
+800,Cree Fire
+801,Severe Fire Threats
+802,Severe Thunderstorms And Flash Flooding
+803,Severe Forest Fire
+804,Scott Able Fire
+805,Flowers-Myakka Fire Complex
+806,Withlacoochee Fire Complex
+807,"Severe Winter Storm, Flooding, Landslides And Mudslides"
+808,Lakeland District Fire
+809,"Fl, Orlando District Fire Complex"
+810,"Fl, Bunnell Fire Complex"
+811,"Fl, Waccasassa Fire Complex"
+812,Viveach Fire
+813,"Fl, Jacksonville Fire Complex"
+814,"Fl, Suwannee Fire Complex"
+815,"Fl, Perry Fire Complex"
+816,Bobcat Gulch Fire
+817,High Meadows Fire
+818,Nm-La Cueva Fire
+819,"Severe Storms, Flooding And Ground Saturation"
+820,Reno Fire Complex
+821,Wa-Wildfire-07-24-2000
+822,Mt - Central Zone 3b Fire Complex
+823,Wy - Dead Horse Fire
+824,Nv - Arrowcreek Fire
+825,Mt-Southwestern Zone Two Fire Complex
+826,Mt - Central Zone 3c Fire Complex
+827,Flagpole Fire Complex
+828,Mt - Northwestern Zone 1 Fire Complex
+829,Mt - South Central Zone 4 Fire Complex
+830,"Severe Storms, Flooding And Mudslides"
+831,Tx-Chicken Fire-0823-00
+832,Wa - Mule Dry Fire - 2000
+833,Sd Jasper Fire Ir #3
+834,Tx - Live Oak Loop Fire
+835,Mt - Willie Fire
+836,Tx - Ranger Hill Fire - 8/30/00
+837,Tx - Moore Branch Fire - 09/03/00
+838,Tx - Stanley Mainline Fire - 09/04/00
+839,Tx - Peach Creek Fire - 09/04/00
+840,Tx - Warren Chapel Fire - 09/04/00
+841,Tx - Sheppard Reese Fire - 09/04/00
+842,Tx - Mesquite Creek Fire - 09/08/00
+843,Tx - Frost Fire - 09/08/00
+844,Tx-Deep Creek Fire-9/8/00
+845,Tx-Milam Street Fire-9/9/00
+846,La-Western Louisiana Fire Complex-9/8/00
+847,Co - Eldorado Fire
+848,Al - County Line Fire - 09/17/2000
+849,Tx-Pine Cove Fire-9/18/00
+850,Ok-Arbuckle Fire Complex-9/18/00
+851,Ok-Oakcliff Fire Complex-9/21/00
+852,Ok-Bristow Fire Complex-9/18/00
+853,Severe Storms And Tornado
+854,Tx - Quail Run Fire - 10/03/00
+855,Tropical Storm Helene
+856,West Nile Virus
+857,Mn - Carlos Edge Fire Complex - 10/19/2000
+858,Tn - Knoxville Fire Complex - 11/02/00
+859,Tn - Cookeville Fire Complex - 11/03/00
+860,Tn-Greeneville Fire Complex-11/03/00
+861,Ky - Eastern District Fire Complex - 11/03/00
+862,Ky - Southeastern District Fire Complex - 11/03/00
+863,Severe Winter And Ice Storm
+864,Severe Winter Storms And Tornadoes
+865,Tx - Alsbury Fire - 08/29/00
+866,Tx - Amhurst Street Fire - 09/04/00
+867,Illinois Winter Snow Storms
+868,Fl - Okeechobee Complex Fire
+869,Fl - Caloosahatchee Fire Complex
+870,Fl - Lakeland Complex Fire
+871,Fl - Orlando Complex Fire
+872,Fl - Myakka Complex Fire
+873,Fl - Everglades Fire Complex - 04/25/01
+874,"Severe Storms, Hail, Flooding And Tornadoes"
+875,"Flooding, Severe Storms And Tornadoes"
+876,Fl - Chipola River Fire Complex - 05/15/01
+877,Fl - Escambia Fire Complex - 05/16/01
+878,"Severe Winter Storms, Flooding And Tornadoes"
+879,"Severe Winter Storms, Flooding, And Tornadoes"
+880,"Severe Winter Storms, Flooding, And Ice Jams"
+881,Perry Fire Complex
+882,Ga - Blounts Pasture Fire
+883,"Severe Storms, Flooding, & Ground Saturation"
+884,Nm -Trap And Skeet Fire - 06/02/2001
+885,"Severe Storms, Flooding And Landslides"
+886,Tx-Tropical Storm Allison-06-06-2001
+887,Ak - Red Fox Fire - 06/30/01
+888,Nv - Ten Mile Fire - 07/05/2001
+889,"Wy Wildfire -Green Knoll- July 23, 2001"
+890,Wa - Union Valley Fire - 07/28/01
+891,Wy- Elk Mountain Fire Complex - 08/01/01
+892,Sd - Elk Mountain Fire Complex - 08/01/01
+893,Nv - Antelope Fire - 08/09/2001
+894,Wa Brewster Fire Complex 2373
+895,Wa - Virginia Lakes Complex - 2372
+896,Wa - Icicle Fire Complex - 2374
+897,Or  Bridge Creek Fires 2375
+898,Wa Tonasket Fire Complex 2376
+899,Wa Spruce Dome Fire Complex 2377
+900,Or Monument Complex 2380
+901,Wa - Mt Leona Fire Complex - 2378
+902,Wa - Rex Creek Fire Complex - 2379
+903,Ut - Mollie Fire - 08/19/01
+904,Wy - Mcfarland Divide Fire - 09/06/01
+905,Fires And Explosions
+906,"Severe Storms, Tornadoes And Flooding Associated With Tropical Storm Gabrielle"
+907,Severe Storms And A Tornado
+908,Co - Armageddon Fire - 11/01/01
+909,Ky - Eastern Fire Complex - 11/02/2001
+910,Ky - Southeastern Fire Complex - 11/02/01
+911,Ky - Kentucky River Complex - 11/02/01
+912,Tn - Chattanooga Fire Complex - 11/03/01
+913,Sc - Long Bay Fire - 11/09/2001
+914,Tn - Ridge Crest Fire - 11/14/2001
+915,Wv - Trough And Smoke Hole Fire Complex - 11/16/2001
+916,Va - Far Southwest Fire Complex - 11/16/2001
+917,Wv - Southeast Fire Complex - 11/16/2001
+918,Va - Shenandoah Gap Fire Complex - 11/20/01
+919,Al - North East Alabama Fire Complex - 11/20/2001
+920,Va - Heard Mountain Fire Complex - 11/20/2001
+921,"Severe Storms, Flooding, Mudslides And Landslides"
+922,Gavilan Fire
+923,Va - Fultz Run Fire - 02-28-2002
+924,Severe Winter Storm With High Winds
+925,Nm-Kokopelli Fire Complex-3-23-02
+926,Co - Snaking Fire - 4/23/2002
+927,Az-Ryan-Wildfire-4/30/2002
+928,Nm - Penasco Fire - 05-01-02
+929,Cuerno Verde Fire
+930,Black Mountain Fire
+931,Nm - Dalton Fire - 05/06/02
+932,Antonio Fire
+933,Az - Indian Fire - 5/15/2002
+934,Co - Schoonover Fire - 05/23/02
+935,Nm - Borrego Fire - 5-23-02
+936,Typhoon Mitag
+937,Mn - By-Pass Fire - 05/31/2002
+938,Nj - Double Trouble Wildfire - 6/02/02
+939,Iron Mountain Fire
+940,Co - James John / Fisher - 06/03/02
+941,Co - Spring Fire - 06/03/02
+942,Nm-Cerro Pelado-6-2-02
+943,Nm-Turkey Fire-6-2-02
+944,Nm-Ponil Fire-06/02/02
+945,Ca - Copper Fire - 06-06-2002
+946,Ute Pass Fire
+947,Coal Seam Fire
+948,Co - Haymen Fire - 06/09/02
+949,Nv Wildfire (Pioche) 06-08-2002
+950,Co - Dierich Fire - 06/10/02
+951,Missionary Ridge Fire
+952,Nm - Roybal Fire - 06/13/02
+953,Bluecut Fire
+954,Wy-Hensel Fire-06/07/02
+955,Sc-Legends Fire
+956,Rodeo Fire
+957,Million Fire
+958,Az - Chediski Farms Fire - 06/21/2002
+959,Co-Wiley Ridge Fire-06/23/02
+960,Valley Fire
+961,Louisiana Fire
+962,Nd - Again Fire - 06/29/2002
+963,Grizzly Gulch Fire
+964,Wy - Reese Mountain Fire - 07/01/02
+965,Ut - Mustang Fire - 07/01/2002
+966,Nv - Gondola Fire - 07/03/2002
+967,Typhoon Chata'an
+968,"Ts Chata'an, Inc Flooding, Mudslides And Landslides"
+969,Az - Oracle Hills Fire - 07/14/2002
+970,Nv - Gate Fire Complex - 07/15/02
+971,Co - Burn Canyon Fire - 07/15/02
+972,Or - Winter Fire - 07/15/2002
+973,Or - Eyerly Fire - 07/13/2002
+974,Nv - Lost Cabin Fire - 07/17/02
+975,Or - Squire Peak/Wall Creek Fire - 07/17/02
+976,Big Elk Fire
+977,Or - Flagtail Fire - 07/19/02
+978,Wa - Deer Point Fire - 07/20/02
+979,Deer Fire
+980,Wa - Pickens Fire - 07/24/02
+981,Or - Sheldon Ridge Fire - 07/25/02
+982,Timbered Rock Fire
+983,Or - Biscuit Fire - 07/28/02
+984,Or - Cache Mountain Fire - 07/28/02
+985,Ca - Pines Fire - 07/30/02
+986,Co - Panorama Fire - 07/31/02
+987,Sd - Battle Creek Fire - 08/18/02
+988,Nm - Lakes Fire Complex - 08/26/02
+989,Wy - Commissary Ridge Fire - 08/31/02
+990,Leona Fire
+991,Squirrel Fire
+992,Sierra Fire
+993,Williams Fire
+994,Croy Fire
+995,Tropical Storm Fay
+996,Tropical Storm Isidore
+997,Hurricane Lili
+998,Severe Storms And Tornados
+999,"Severe Winter Storms, Flooding, Coastal Erosion And Tidal Surge"
+1000,Super Typhoon Pongsona
+1001,Typhoon Pongsona
+1002,Ca - Wildfire (Pacific Fire) - 01-06-2003
+1003,Loss Of Space Shuttle Columbia
+1004,Loss Of The Space Shuttle Columbia
+1005,"Severe Winter Storm, Record/Near Record Snow, Heavy Rains, Flooding And Landslides"
+1006,"Severe Winter Ice And Snow Storms, Heavy Rain, Flooding, Tornadoes, And Mud And"
+1007,Severe Winter Storm And Record/Near Record Snow
+1008,"Severe Winter Storm, Record/Near Record Snowfall, Heavy Rain,Floodind, And Mudslide"
+1009,"Severe Storms, Tornadoes, Floods"
+1010,"Severe Winter Storm, Including High Winds And Freezing Temperatures"
+1011,Nm-Walker Fire-05-09-03
+1012,Severe Winter Cold And Frost
+1013,Hi - Waikoloa Village Fire - 05/18/2003
+1014,"Severe Storms, Flooding, Mud And Rock Slides, And Tornadoes"
+1015,"Heavy Rainfall, Flooding, Landslides, And Mudslides"
+1016,Nv - Highway-50 Fire - 06/17/2003
+1017,Aspen Fire
+1018,Ash Fire
+1019,"Severe Storms, Flooding, And Landslides"
+1020,Nm-Bosque Fire-06-25-2003
+1021,Ca - Sawmill Fire - 06-27-2003
+1022,Ca - Tejon Fire - 06-30-2003
+1023,Ca-Railroad Fire-07-03-2003
+1024,Nv-Red Rock Fire 7-11-03
+1025,Wa-Middle Fork Fire-07-12-2003
+1026,Kinishba Fire
+1027,Nv-Robb Wildfire-7-14-2003
+1028,Ut-Causey Fire 07/14/2003
+1029,Wa-Okanogan City Fire-07-16-2003
+1030,Hurricane Claudette
+1031,Ok - Big Rock Fire - 07/18/03
+1032,Mt - Missouri Breaks Complex Fire 07/16/03
+1033,Canyon Fire
+1034,Mt-Wedge Canyon Fire-07/18/2003
+1035,Co-Cloudy Pass Fire-07/25/2003
+1036,Mt-Robert Fire-07-23-03
+1037,"Severe Storms, High Winds, And Heavy Rain"
+1038,"Tornadoes, Flooding, Severe Storms, And High Winds"
+1039,Mt-Hobble Fire-08/07/2003
+1040,Mt-Cherry Creek Fire -08/06/03
+1041,Mt-Missoula/Mineral Fire Zone-08/08/03
+1042,Ca-Locust  Wildfire-08-19-2003
+1043,Mt-Lincoln Fire Complex - 08/14/2003
+1044,Or-Booth Fire-8-19-2003
+1045,Mt-Flathead Fire Zone-8/20/03
+1046,Power Outage
+1047,Or-Wyeth/Herman Creek Fire 09-02-2003
+1048,Wa-Needle Fire-09-06-2003
+1049,Or-Cove Road Fire-09-05-2003
+1050,Ca-Bridge Fire-09-05-2003
+1051,Hurricane Isabel
+1052,Tropical Storm Henri
+1053,Tropical Storms Henri And Isabel And Related Severe Storms And Flooding
+1054,Nv - Voltaire-2 Fire - 09-29-2003
+1055,Pass Fire
+1056,Ca-Grand Prix Fire-10-23-2003
+1057,Old Fire
+1058,Ca-Verdale Fire 10-25-2003
+1059,Ca-Cedar Fire-10-26-2003
+1060,Simi Fire
+1061,Ca-Mountain Fire-10-26-2003
+1062,"Wildfires, Flooding, Mudflow And Debris Flow Directly Related T"
+1063,Ca-Whitmore Fire-10-28-2003
+1064,Co - Cherokee Ranch Wildfire - 10/29/2003
+1065,Co - Overland Wildfire - 10/29/2003
+1066,Co - Buckhorn Creek Fire - 11/11/2003
+1067,Wy - Tongue River Wildfire - 11/19/2003
+1068,Sd - Mill Road Wildfire - 11/19/2003
+1069,"Severe Storms, Flooding, Mudslides, And Landslides"
+1070,"Severe Storms, Flooding, Landslides, And Mudslides"
+1071,Typhoon Lupit
+1072,"High Winds, High Surf, And Heavy Rainfall Associated With Tropcial Cyclone Heta"
+1073,"Severe Storms, Flooding, Snow Melt And Ice Jams"
+1074,Co - Picnic Rock Fire - 03/30/2004
+1075,Typhoon Sudal
+1076,Ca - Pleasure Fire - 04-25-2004
+1077,Ca-Eagle Fire-05-04-2004
+1078,Ca-Cerritos Fire-5-04-2004
+1079,"Sever Storms, Flooding And Landslides"
+1080,Peppin Fire
+1081,Ca-Gaviota Fire-06-05-2004
+1082,Three Forks Fire
+1083,"Severe Storms, Tornadoes, Flooding, And Mudslides"
+1084,Brookside Fire
+1085,Nm-Bernardo Fire-6-18-2004
+1086,Willow Fire
+1087,Verdi Fire Complex
+1088,Flooding As A Result Of A Levee Break
+1089,Boundary Fire
+1090,Co-Mcgruder Fire-07/03/2004
+1091,Wa-Beebe Fire-07-04-2004
+1092,Ca - Mataguay Fire - 7-13-2004
+1093,Ca-Lakeview-07-14-2004
+1094,Waterfall Fire
+1095,Ca-Hollow Fire-07-14-2004
+1096,Ca - Pine Fire - 7-13-2004
+1097,Ca-Foothill Wildfire-07-18-2004
+1098,Ca-Melton Wildfire-07-18-2004
+1099,Ca-Crown Wildfire-07-21-2004
+1100,Robbers Fire
+1101,"Flooding, High Surf, High Winds, And Wind-Driven Rain Associated W Typh Tingting"
+1102,"High Winds, Flooding, And Mudslides As A Result Of Tropical Storm Tingting"
+1103,Elk Heights Fire
+1104,Deep Harbor Fire
+1105,Or-Redwood Highway Wildfire-08-04-2004
+1106,Ca-Calaveras Complex-08-07-2004
+1107,Ca-Stevens Fire-08--8-2004
+1108,Ak-Bolgen Creek Fire-08-10-2004
+1109,Ca-Bear Fire-08-11-2004
+1110,Ca Oregon Fire 08-11-2004
+1111,Wa-Fischer Wildfire-08-11-2004
+1112,Mud Lake Fire
+1113,Tropical Storm Bonnie And Hurricane Charley
+1114,Ca-Lake Fire 08-14-2004
+1115,Ca-French Fire 08-14-2004
+1116,Or-Bland Mountain Wildfire-08-20-2004
+1117,Andrew Wildfire
+1118,"Flooding, High Surf, Storm Surge, And High Winds As A Result Of Super Typhoon Ch"
+1119,Wildland Fire
+1120,Ak-Taylor Complex Fire-09-01-2004
+1121,Hurricane Charley
+1122,Ca-Bear Fire-09-02-2004
+1123,Ca-Pattison Fire-09-03-2004
+1124,"Severe Storms, Flooding And Tornadoes Associated W Td Gaston"
+1125,Ca-Geysers Fire-09-04-2004
+1126,Hurricane Frances
+1127,Tropical Storm Frances
+1128,Rix-Ca-Old Highway Wildfire 9/13/04
+1129,Kawaihae Road Fire Hawaii
+1130,Hurricane Ivan
+1131,Tropical Storm Gaston
+1132,Tropical Storm Jeanne And Resulting Landslides And Mudslides
+1133,Tropical Depression Ivan
+1134,Severe Storms And Flooding Associated With Tropical Depression Frances
+1135,Hurricane Jeanne
+1136,Tropical Storm Jeanne
+1137,Severe Storms And Flooding From The Remanants Of Hurricane Jeanne
+1138,"Severe Winter Storm, Tidal Surges And Flooding"
+1139,"Severe Storms, Tornadoes, And Flooding From The Remnants Of"
+1140,Record/Near Record Snow
+1141,"Severe Storms, Flooding, Debris Flows, And Mudslides"
+1142,"Severe Winter Storms, Heavy Rains, And Flooding"
+1143,Severe Winter Storm And Record Snow
+1144,"Severe Winter Storms, Flooding, And Mudslides"
+1145,Record Snow
+1146,Record And/Or Near Record Snow
+1147,"Tc Olaf, Includ. High Winds And Surf And Heavy Rainfall"
+1148,"Severe Storms, Flooding, Landslides, And Mud And Debris Flows"
+1149,Sd Wildfire Camp Five
+1150,Vekol Fire-05-26-2005
+1151,Az-Bobby Fire-06-08-2005
+1152,Az-Hulet Fire-06-11-2005
+1153,Cave Creek Fire Complex
+1154,Az-Humbug Fire 06-23--2005
+1155,Good Springs Fire
+1156,Blue Springs Fire
+1157,"Severe Storms, Flooding, Snow Melt, And Ice Jams"
+1158,Mason Fire
+1159,Sd Ricco Fire
+1160,Contact Fire
+1161,Carlin Fire
+1162,Sd Skyline #2 Fire 7/16/05
+1163,Az-Wildfire (Edge Complex) 07-22-2005
+1164,Ca-Quartz Fire-7-25-2005
+1165,Flooding And Landslides
+1166,Dirty Face Fire
+1167,Lalamilo Fire
+1168,Akoni Pule Highway Fire
+1169,School Fire
+1170,Nanakuli Brush Fire
+1171,Waikele Fire
+1172,Vor-Mccarty Fire
+1173,Tropical Storm Cindy
+1174,Deer Creek Fire
+1175,Manton Fire
+1176,Hurricane Katrina
+1177,Chance Fire
+1178,Hurricane Katrina Evacuation
+1179,Sundevil Fire
+1180,Hurricane Katrina Evacuees
+1181,Hurricane Ophelia
+1182,Tropical Storm Rita
+1183,Hurricane Rita
+1184,Topanga Fire
+1185,Woodhouse Fire
+1186,Border # 50 Fire
+1187,Hurricane Wilma
+1188,Tornado And Severe Storms
+1189,Typhoon Nabi
+1190,Severe Winter Storm And Record And/Or Near Record Snow
+1191,Flat Rock Fire Complex
+1192,Antioch Fire
+1193,Velma Fire Complex
+1194,Texanna Road Fire
+1195,"Severe Fall Storm, Tidal Surges, And Flooding"
+1196,Hughes County Fire Complex
+1197,Callahan County Fire
+1198,Achille Fire Complex
+1199,Kennedale Fire
+1200,Eastern Oklahoma County Fire Complex
+1201,Depew Fire Complex
+1202,Wainwright Fire Complex
+1203,Ringgold Fire
+1204,Carbon Fire
+1205,63rd Street Fire
+1206,Southeast New Mexico Fire Complex
+1207,Shamrock Fire Complex
+1208,Guthrie Fire
+1209,Prague Fire
+1210,Sapulpa Fire Complex
+1211,Cashion Fire Complex
+1212,Bethel Acres Fire
+1213,Eufaula Fire
+1214,Mill Creek Fire
+1215,Bulverde Fire
+1216,Rosewood Fire
+1217,Cedar Creek Fire
+1218,Hawkins Fire
+1219,Mcnally Flats Fire
+1220,Mauricio Canyon Fire
+1221,Henryetta Fire
+1222,Extreme Wildfire Threat
+1223,Niederwald Fire
+1224,Ratcliff Fire
+1225,Lockhart Fire
+1226,Kiefer Fire
+1227,North Stillwater Fire
+1228,Sperry Fire
+1229,Stecker Fire
+1230,Orchard Fire
+1231,Ryan Fire
+1232,Huntington Brook Fire
+1233,Paoli Fire
+1234,Venus Fire Complex
+1235,Casa Fire
+1236,Obee Fire
+1237,New Castle Fire
+1238,Cement Fire
+1239,Ponca City Fire
+1240,Ojo Feliz Fire
+1241,"Severe Storms, Tornadoes, And Straight Line Winds"
+1242,Bull Mountain Fire
+1243,Volusia Fire Complex
+1244,"Severe Storms, Flooding, Tidal Surge, Landslides, And Mudslides"
+1245,Lake Olympia Fire
+1246,La Barranca Fire
+1247,Parks Highway (Tamarack) Fire
+1248,Potato Fire
+1249,Woody Fire
+1250,Malpais Fire
+1251,Brins Fire
+1252,Malo Vega Fire
+1253,Rivera Mesa Fire
+1254,Suzie Fire
+1255,North Trinity Fire
+1256,Oregon Fire
+1257,Linehan Fire Complex
+1258,"Severe Storms, Flooding, And Mudslides"
+1259,"Severe Storms, Tornadoes, Straight Line Winds, And Flooding"
+1260,Saunders Fire
+1261,Sawtooth Fire Complex
+1262,Thorn Divide Fire Complex
+1263,Big Rock Fire
+1264,Horse Fire
+1265,Foster Gulch Fire Complex
+1266,East Ridge Fire
+1267,Black Crater Fire
+1268,Dawes County Fire Complex
+1269,Sioux County Fire Complex
+1270,"Severe Storms, Straight Line Winds, And Flooding"
+1271,Snow Melt And Ice Jam Flooding
+1272,Valley Mill Fire
+1273,Verdi Fire
+1274,Jackson Canyon Fire
+1275,Purgatory Road Fire
+1276,Caddo Ii Fire Complex
+1277,Columbia Fire Complex
+1278,Emerald Hills Fire
+1279,Mudd Fire
+1280,Derby Fire
+1281,Red Apple Fire
+1282,Ma'alaea Fire
+1283,Flick Creek Fire
+1284,Moore Road Fire
+1285,"Tropical Depression Ernesto, Severe Storms And Flooding"
+1286,Day Fire
+1287,Lake Effect Snowstorm
+1288,Esperanza Fire
+1289,Pinehaven Fire
+1290,Rim Rock Fire
+1291,Shekell Fire
+1292,"Severe Winter Storm, Landslides, And Mudslides"
+1293,Severe Winter Storm And Flooding
+1294,Record Snow And Near Record Snow
+1295,Belen Fire
+1296,241 Fire
+1297,53 Big Pine Fire
+1298,Sweat Farm Road Fire
+1299,Severe Storms And Inland And Coastal Flooding
+1300,Kneeknocker Swamp Fire
+1301,Deland Fire Complex
+1302,Roundabout Fire
+1303,Suwannee Fire Complex
+1304,Black Creek Fire
+1305,Griffith Park Fire
+1306,Calloosahatchee Fire Complex
+1307,Bugaboo Scrub Fire
+1308,Island Fire
+1309,Warren Grove Fire
+1310,"Severe Storms, Flooding, Mudslides, And Rockslides"
+1311,Harveytown Fire
+1312,Newcastle Fire
+1313,Caribou Hills Fire
+1314,Angora Fire
+1315,Olowalu Fire
+1316,Creek Fire
+1317,Neola North Fire
+1318,Sleeping Elephant Fire
+1319,Inyo Fire Complex
+1320,Milford Flat Fire
+1321,Easy Street Fire
+1322,Alabaugh Canyon Fire
+1323,Hungry Valley Fire
+1324,Egley Fire Complex
+1325,Tunk Grade Fire
+1326,Hawken Fire
+1327,Salt Creek Fire
+1328,Box Elder Fire
+1329,Murphy Fire Complex
+1330,Jocko Lakes Fire
+1331,Little Goose Fire
+1332,Waialua Fire
+1333,Black Cat Fire
+1334,Kohala Mountain Road Fire
+1335,Hurricane Dean
+1336,Ford Road Fire
+1337,Bridge Collapse
+1338,Castle Rock Fire
+1339,East Zone Fire Complex
+1340,Cascade Fire Complex
+1341,"Severe Storms, Flooding, And Tornado"
+1342,Gw Fire
+1343,Butler 2 Fire
+1344,Angel Fire
+1345,Country Club Fire
+1346,Broughton Fire
+1347,Tropical Storm Erin
+1348,Buckweed Fire
+1349,Witch Fire
+1350,Harris Fire
+1351,Ranch Fire
+1352,Grass Valley Fire
+1353,Santiago Fire
+1354,Rice Fire
+1355,"Wildfires, Flooding, Mud Flows, And Debris Flows"
+1356,Puako Fire
+1357,Ojo Peak Fire
+1358,"Severe Storms, High Surf, Flooding, And Mudslides"
+1359,"Severe Storms, Tornadoes, Straight-Line Winds, And Flooding"
+1360,Chevron Fire
+1361,Broadway Fire
+1362,"Severe Storms, Tornadoes, Straight-Line Winds, And"
+1363,Scurry Fire Complex
+1364,South Odessa Fire
+1365,South Woodward Fire
+1366,Silver Fire
+1367,New Archer Fire
+1368,La Perla Fire
+1369,Arabella Fire
+1370,Old Bastrop Highway Fire Complex
+1371,Eighty-Two Fire
+1372,322 Fire
+1373,Burns Ranch Fire
+1374,Encino Fire
+1375,Quinlan Fire
+1376,Silver Heels Fire
+1377,Kentwood Fire
+1378,Parker Fire
+1379,Ordway Fire
+1380,Hebbronville Fire
+1381,Trigo Fire
+1382,Santa Anita Fire
+1383,Price Fire
+1384,Brevard Fire Complex
+1385,"Severe Storms, Tornadoes, Flooding, Mudslides, And Landslides"
+1386,Summit Fire
+1387,Severe Winter Storm And Record And Near Record Snow
+1388,Rein Street Fire
+1389,Hughes Ranch Fire
+1390,Gotebo Fire
+1391,Ophir Fire
+1392,Humboldt Fire
+1393,Martin Fire
+1394,Evans Road Fire
+1395,Camp Bowie Fire
+1396,"Severe Storms, Tornadoes, Flooding, Mudslides, And"
+1397,Trabing Fire
+1398,Wild Fire
+1399,Big Springs Fire
+1400,Nash Ranch Fire
+1401,Lane 2 Fire
+1402,Gap Fire
+1403,Basin Fire Complex
+1404,Camp Fire
+1405,Badger Mountain Fire Complex
+1406,Spokane Valley Fire
+1407,"Severe Storms, Straight-Line Winds, And Flooding"
+1408,Hurricane Dolly
+1409,Florence Fire
+1410,"Severe Storms, A Tornado, And Flooding"
+1411,Hurricane Gustav
+1412,Gladding Fire
+1413,Hurricane Ike
+1414,Royce Butte Fire
+1415,Severe Storms And Flooding Associated With Hurricane Gustav
+1416,Severe Storms And Flooding Associated With Hurricane Ike
+1417,Tropical Storm Hanna
+1418,Severe Wind Storm Associated With Tropical Depression Ike
+1419,Marek Fire
+1420,Sesnon Fire
+1421,Tropical Storm Ike
+1422,Hurricane Omar
+1423,"Severe Storms, Flooding, And A Tornado"
+1424,Tea Fire
+1425,Freeway Fire Complex
+1426,Sayre Fire
+1427,Olde Stage Fire
+1428,56th Presidential Inauguration
+1429,"Severe Winter Storm, Landslides, Mudslides, And Flooding"
+1430,Rhodes Ranch Fire
+1431,Wilderness Ridge Fire
+1432,"Severe Winter Storm, Record And Near Record Snow"
+1433,Loma Del Norte Fire
+1434,Tuscola Fire
+1435,Taloga Fire
+1436,Greenwood Fire
+1437,Lagarto Fire
+1438,Magic City Fire
+1439,Holiday Beach Fire
+1440,Steel Fire
+1441,Montague Fire Complex
+1442,Midwest Choctaw Fire
+1443,Breckenridge Fire
+1444,1148 Fire
+1445,Cement Mountain Fire
+1446,Mulhall Fire
+1447,617 Fire
+1448,Electra West Fire
+1449,Healdton Carter Fire
+1450,Mcclain County Fire
+1451,"Severe Storms, Flooding, Tornadoes, And Straight-Line Winds"
+1452,Highway 31 Fire
+1453,"Severe Storms, Flooding, Tornadoes & Straight-Line"
+1454,Jesusita Fire
+1455,Buckwood Fire
+1456,Martin County Fire Complex
+1457,Mile 17 East End Road Fire
+1458,Mule Pass Fire
+1459,"Severe Storms, Tornadoes, Flooding And Mudslides"
+1460,"Severe Storms, Tornadoes, Flooding, And Straight-Line Winds"
+1461,"Severe Storms, Flooding, Straight-Line Winds, And Tornadoes"
+1462,Union Valley Fire
+1463,Lockheed Fire
+1464,"Severe Storms, Straight-Line Winds And Flooding"
+1465,Yuba Fire
+1466,Dry Creek Fire Complex
+1467,Oden Road Fire
+1468,Microwave Fire
+1469,Pv Fire
+1470,Station Fire
+1471,Mill Flat Fire
+1472,49 Fire
+1473,Water Wheel Fire
+1474,Oak Glen Fire
+1475,Kaunakakai Fire
+1476,Pendleton Fire
+1477,Eagle Mount Fire
+1478,South County Fire Complex
+1479,Guiberson Fire
+1480,"Earthquake,Tsunami, And Flooding"
+1481,Twin Fire
+1482,Sheep Fire
+1483,Explosions And Fire
+1484,Severe Storms And Flooding Associated With Tropical Depression Ida And A Nor'east
+1485,Severe Storms And Flooding Associated With Tropical Depression Ida And A Nor'eas
+1486,Tropical Storm Ida
+1487,Severe Storms And Flooding Assoc W Td Ida & Nor'easter
+1488,Snowstorm
+1489,Severe Winter Storm And Snowstorm
+1490,Severe Winter Storms And Snowstorm
+1491,"Severe Winter Storms, Flooding, And Debris And Mud Flows"
+1492,Severe Winter Storms And Snowstorms
+1493,Severe Storms And  Flooding
+1494,"Severe Storms, Ice Jams, And Flooding"
+1495,Water Main Break
+1496,"Severe Storms, Flooding, Mudslides, And Tornadoes"
+1497,Cabazon Fire
+1498,"Severe Storms, Tornadoes, And Straight-Line Winds"
+1499,Maalaea Fire
+1500,Hardy Fire
+1501,Shultz Fire
+1502,Tropical Storm Alex
+1503,Cathedral Fire
+1504,Cowiche Mills Fire
+1505,Bull Fire
+1506,West Fire
+1507,Crown Fire
+1508,Hurricane Alex
+1509,Post Fire
+1510,Hurd Fire
+1511,Slide Creek Wildfire
+1512,Four Mile Canyon Fire
+1513,Glenview Fire
+1514,Reservoir Road Fire
+1515,Machine Gun Fire
+1516,"Severe Storms, Flooding, And Straight-Line Winds"
+1517,"Severe Storms, Flooding, Tornado, And Straight-Lin"
+1518,"Severe Storms, Flooding, Mudslides, And Landslides Assoc W Ts Otto"
+1519,"Severe Storms, Flooding, Rockslides, And Mudslides Assoc. With Ts Tomas"
+1520,"Severe Winter Storm, Flooding, Mudslides, Landslides, And Debris Flows"
+1521,Smith Fire
+1522,Coffman Fire
+1523,Matador Fire
+1524,Tanglewood Fire Complex
+1525,Willow Creek South Fire Complex
+1526,Mitchell Fire Complex
+1527,Quail Ridge Fire
+1528,Harrah Fire
+1529,Enmin Fire
+1530,Midwest City Fire Complex
+1531,Goldsby Fire
+1532,Big Trickle Ranch Fire
+1533,Shawnee Fire
+1534,Indian Gulch Fire
+1535,Osage County Fire Complex
+1536,Severe Winter Storm And Extreme Cold Temperatures
+1537,Elan Church Road Fire
+1538,Mosley Road Fire
+1539,"Severe Winter Storm, Flooding, Landslides, And Mudslides"
+1540,Tsunami Wave Surge
+1541,Haskell County Fire
+1542,Bates Field Fire
+1543,White Fire
+1544,Guymon Fire
+1545,Crystal Fire
+1546,El Cenizo Fire
+1547,Jones Spencer Fire
+1548,Tsunami Waves
+1549,Hickman Fire
+1550,Rockhouse Fire
+1551,Swenson Fire
+1552,Cleveland Fire
+1553,Cooper Mountain Ranch Fire
+1554,Wildcat Fire
+1555,Pk West Fire
+1556,Wichita Fire Complex
+1557,Goodyear Plant Fire
+1558,Pk East Fire
+1559,Hohertz Fire
+1560,East Sidwynicks Fire
+1561,Tire Fire
+1562,Bryson Fire Complex
+1563,Pinnacle Fire
+1564,148/2332 Fire
+1565,Thedford Fire
+1566,Pleasant Farms Fire
+1567,Slope Fire
+1568,Oasis Pipeline Fire
+1569,"Severe Storms, Tornadoes, Straight-Line Winds, And Associated Flooding"
+1570,Sisk Road Fire
+1571,Waggoner Ranch Fire
+1572,"Severe Storms, Tornadoes, And Associated Flooding"
+1573,Gage Holland Fire
+1574,Matt Loop Fire
+1575,Horseshoe Two Fire
+1576,"Severe Storms, Straight-Line Winds, Tornadoes, And Flooding"
+1577,"Flooding, Landslides, And Mudslides"
+1578,Moose Mountain Fire
+1579,Ceed Fire
+1580,Pitt Road Fire
+1581,Stone Ridge Fire
+1582,Reimer Fire
+1583,Tejano Canyon Fire
+1584,Wallow Fire
+1585,Snyder Fire
+1586,Ice Jam And Flooding
+1587,Monument Fire
+1588,Track Fire
+1589,Racepond Wildfire
+1590,Duckett Fire
+1591,Sweat Farm Again Fire
+1592,Grand Mesa Fire
+1593,Forest Brook Fire
+1594,Powerline Fire
+1595,Mcdonald 2 Fire
+1596,Dyer Mill Fire
+1597,Cowboy Church Fire
+1598,Boyken Road Fire
+1599,White Hat Fire
+1600,Medicine Park Fire
+1601,Las Conchas Fire
+1602,Little Lewis Fire
+1603,Donaldson Fire
+1604,Simmons Road Fire
+1605,Nolan County Fire Complex
+1606,Falls Creek Fire
+1607,Edmond Fire
+1608,"Severe Storms, Straight-Line Winds, Tornadoes, And"
+1609,Frankhoma 81-Fire
+1610,Mustang Road Fire
+1611,Anderson Road Fire
+1612,Turley Fire
+1613,Regency Fire
+1614,Coffee Creek Fire
+1615,265th West Fire
+1616,Cleveland-Mannford Fire Complex
+1617,Cedar Lane Fire
+1618,Horseshoe Fire
+1619,Hurricane Irene
+1620,Canyon Creek Fire
+1621,63rd And Sooner Road Fire
+1622,101 Ranch Fire
+1623,Westminster Fire
+1624,Twin Lakes Fire Complex
+1625,Tropical Storm Irene
+1626,Hill Fire
+1627,Ferguson Fire
+1628,Hodde Fire
+1629,Bastrop County Fire Complex
+1630,Steiner Ranch Fire
+1631,Pedernales Bend Fire
+1632,Riley Road Fire
+1633,Tamina Fire
+1634,Moonglow Fire
+1635,Bear Creek Fire
+1636,Remnants Of Tropical Storm Lee
+1637,Big Oak Fire
+1638,Monastery Fire Complex
+1639,Pat Gross Fire
+1640,Holbrook Fire
+1641,Keene Fire Complex
+1642,Comanche Fire Complex
+1643,Tropical Storm Lee
+1644,Indian Creek Fire
+1645,Tropical Storm Maria
+1646,The Remnants Of Tropical Storm Lee
+1647,Caughlin Fire
+1648,Severe Storm And Snowstorm
+1649,Washoe Fire
+1650,"Severe Storms, Tornadoes, Straight-Line Winds And Flooding"
+1651,"Severe Storms, Straight-Line Winds, And Tornadoes"
+1652,"Severe Storms, Tornadoes, Straight-Line Winds And"
+1653,"Severe Storms, Flooding, Mudslides, And Lanslides"
+1654,Lower North Fork Fire
+1655,Livermore Ranch Fire Complex
+1656,Tre Fire
+1657,Whitewater-Baldy Fire Complex
+1658,Little Bear Fire
+1659,High Park Fire
+1660,Severe Storm And Flooding
+1661,Blanco (Cr 4901) Fire
+1662,Romero Fire
+1663,"Severe Storm, Tornado, And Flooding"
+1664,Dump Fire
+1665,Waldo Canyon Fire
+1666,Weber Fire
+1667,Wood Hollow Fire
+1668,Dahl Fire
+1669,Corral Fire
+1670,Ash Creek Fire
+1671,Clay Springs Fire
+1672,High Park And Waldo Canyon Wildfires
+1673,Arapahoe Fire
+1674,Rose Crest Fire
+1675,Squirrel Creek Fire
+1676,Shingle Fire
+1677,Tropical Storm Debby
+1678,Oil Creek Fire
+1679,Severe Storms And Straight-Line Winds
+1680,Myrtle Fire
+1681,Fair Grounds Fire Complex
+1682,Wildfire
+1683,Freedom Fire
+1684,Luther Fire
+1685,Noble Fire
+1686,Geary Fire
+1687,Drumright Fire
+1688,Glencoe Fire
+1689,Wye Fire
+1690,Taylor Bridge Fire
+1691,Trinity Ridge Fire
+1692,Ponderosa Fire
+1693,Freedom And Noble Wildfires
+1694,Tropical Storm Isaac
+1695,Nineteen Mile Fire
+1696,Hurricane Isaac
+1697,Region 23 Fire Complex
+1698,Wellnitz Fire
+1699,Highway 141 Fire Complex
+1700,Barker Canyon Fire
+1701,1st Canyon Fire
+1702,Sheep Herder Hill Fire Complex
+1703,Byrd Canyon Fire
+1704,Sawtooth Fire
+1705,Poison Fire
+1706,Peavine Fire
+1707,Karney Fire
+1708,Table Mountain Fire
+1709,Shockey Fire
+1710,"Severe Storm, Straight-Line Winds, And Flooding"
+1711,Wetmore Fire
+1712,Hurricane Sandy
+1713,"Severe Storm, Straight-Line Winds, Flooding, And Landslides"
+1714,Severe Storms And Flooding Due To The Remnants Of Hurricane Sandy
+1715,"Severe Winter Storm, Snowstorm, And Flooding"
+1716,Explosions
+1717,Explosion
+1718,Springs Fire
+1719,Powerhouse Fire
+1720,Tres Lagunas Fire
+1721,Black Forest Fire
+1722,Royal Gorge Fire
+1723,Doce Fire
+1724,West Fork Fire Complex
+1725,East Peak Fire
+1726,Yarnell Hill Fire
+1727,Dean Peak Fire
+1728,Carpenter 1 Fire
+1729,West Mullan Fire
+1730,Pacifica Fire
+1731,Black Forest Wildfire
+1732,Douglas Fire Complex
+1733,Colockum Tarps Fire
+1734,Brimstone Fire
+1735,Falls Fire
+1736,Mile Post 10 Fire
+1737,Elk Fire
+1738,Rockport Five Fire
+1739,Government Flats Fire Complex
+1740,Lolo Creek Fire Complex
+1741,Eagle Fire
+1742,Rim Fire
+1743,Clover Fire
+1744,"Severe Storms, Flooding, Landslides, Mudslides"
+1745,"Severe Storms, Winter Storms, Tornadoes And Flooding"
+1746,Chemical Spill
+1747,Colby Fire
+1748,Flooding And Mudslides
+1749,"Severe Storms,Tornadoes, And Flooding"
+1750,Double Diamond Fire
+1751,Cocos Fire
+1752,Poinsettia Fire
+1753,Two Bulls Fire
+1754,Butts Fire
+1755,Lake Spokane Fire
+1756,Mills Canyon Fire
+1757,Moccasin Hills Fire
+1758,Chiwaukum Fire
+1759,Carlton Complex Fire
+1760,Saddle Mountain Fire
+1761,Watermelon Hill Fire
+1762,Anaconda Fire
+1763,"Severe Storms, Straight-Line Winds, Flooding, Landslides, And Mudslides"
+1764,Oregon Gulch Fire
+1765,Eiler Fire
+1766,Bald Fire
+1767,Snag Canyon Fire
+1768,Rowena Fire
+1769,Hansel Fire
+1770,Way Fire
+1771,Bridge Fire
+1772,Tropical Storm Halong
+1773,Tropical Storm Iselle
+1774,Courtney Fire
+1775,Boles Fire
+1776,36 Pit Fire
+1777,King Fire
+1778,Applegate Fire
+1779,Pu'u O'o Volcanic Eruption And Lava Flow
+1780,Slide Fire
+1781,"Severe Winter Storms, Snowstorms, Flooding, Landslides, And Mudslides"
+1782,"Severe Storms, Tornadoes, Flooding, Landslides, And Mudslides"
+1783,"Severe Winter Storm, Snowstorm, Flooding, Landslides, And Mudslides"
+1784,Typhoon Dolphin
+1785,Sockeye Fire
+1786,Card Street Fire
+1787,Kearny River Fire
+1788,Sleepy Hollow Fire
+1789,Cape Horn Fire
+1790,North Fire
+1791,Blue Creek Fire
+1792,Wragg Fire
+1793,Stouts Creek Fire
+1794,Rocky Fire
+1795,Highway 8 Fire
+1796,Typhoon Soudelor
+1797,Krauss Lane Fire
+1798,"Severe Storms, Tornadoes, Straight-Line Winds, Flooding, Landslides, And Mudslide"
+1799,Cornet And Windy Ridge Fire Complex
+1800,Chelan Fire Complex
+1801,Clearwater Lawyer Branch Fire Complex
+1802,Nine Mile Fire
+1803,Okanagan County Fire Complex
+1804,Canyon Creek Fire Complex
+1805,Stickpin Fire
+1806,Stevens County Fire Complex
+1807,Municipal Fire
+1808,Twisp River Fire
+1809,Renner Fire
+1810,Grizzly Bear Fire Complex
+1811,Goodell Fire
+1812,Tepee Springs Fire
+1813,Butte Fire
+1814,Horsethief Butte Fire
+1815,Dry Gulch Fire
+1816,Valley Fire And Butte Fire
+1817,Hidden Pines Fire
+1818,Severe Windstorm
+1819,Wildfires And Mudslides
+1820,Dld Fire Complex
+1821,Severe Storm And Straight-Line Wind
+1822,Contaminated Water
+1823,Oak Grove Fire
+1824,"Severe Winter Storm, Straight-Line Winds, Flooding, Landslides, Mudslides, And A T"
+1825,"Severe Winter Storms, Tornadoes, Straight-Line Winds, And Flooding"
+1826,"Severe Winter Storms, Straight-Line Winds, Flooding, Landslides, And Mudslides"
+1827,Pawnee Cove Fire
+1828,Anderson Creek Fire
+1829,350 Fire Complex
+1830,Burr Oak Fire
+1831,Stoddard Fire
+1832,Severe Winter Storm And Straight-Line Winds
+1833,Tenderfoot Fire
+1834,Akawana Fire
+1835,Dog Head Fire
+1836,Border 3 Fire
+1837,Fish Fire
+1838,Saddle Fire
+1839,Erskine Fire
+1840,Sage Fire
+1841,Cold Springs Fire
+1842,Timberon Fire
+1843,Sand Fire
+1844,Lava Mountain Fire
+1845,Soberanes Fire
+1846,Tokawana Fire
+1847,Rock Fire
+1848,Goose Fire
+1849,Virginia Mountains Complex Fire
+1850,South Ward Gap Fire
+1851,Roaring Lion Fire
+1852,Pilot Fire
+1853,Clayton Fire
+1854,Chimney Fire
+1855,Blue Cut Fire
+1856,Yale Fire
+1857,Wellesley Fire
+1858,Cedar Fire
+1859,Henrys Creek Fire
+1860,"Severe Storm, Tornadoes, Flooding, Landslides, And Mudslides"
+1861,Suncrest Fire
+1862,Gold Canyon Fire
+1863,Hurricane Hermine
+1864,Beulah Hill Fire
+1865,Hurricane Matthew
+1866,Junkins Fire
+1867,Eagles Nest Fire
+1868,Flippers Bend Fire
+1869,Smith Mountain Fire Complex
+1870,Party Rock Fire
+1871,Pinnacle Mountain Fire
+1872,Tatum Gulf Fire
+1873,Chestnut Knob Fire
+1874,East Miller Cove Fire
+1875,Southeastern Kentucky Fire Complex
+1876,Chimney Top Fire
+1877,Okc Fire Complex
+1878,Potential Failure Of The Emergency Spillway At Oroville Lake
+1879,141st Fire
+1880,Highland Hills Fire
+1881,Clark County Fire
+1882,Ellsworth-Lincoln-Russell Fire Complex
+1883,Rooks County Fire
+1884,Ness County Fire
+1885,Ford County Fire Complex
+1886,Comanche County Fire
+1887,Nw Oklahoma Wildfire Outbreak Complex
+1888,30th Avenue Fire
+1889,"Severe Winter Storms, Flooding, Landslides,  Mudslides"
+1890,Indian Lake Estates Fire
+1891,Lehigh Acres (Anna Ave. N.) Fire
+1892,West Mims Fire
+1893,Spromberg Fire
+1894,Lizard Fire
+1895,El Cajete Fire
+1896,"Severe Winter Storm, Snowstorm, Straight-Line Winds, And Flooding"
+1897,Brian Head Fire
+1898,Goodwin Fire
+1899,South Wenas Fire
+1900,Roach Fire
+1901,Wall Fire
+1902,Detwiler Fire
+1903,Oil Well Fire
+1904,Preacher Fire
+1905,Lodgepole Fire Complex
+1906,Pipeline Fire
+1907,"Severe Winter Storms, Flooding, Landslides, And Mudslides"
+1908,Milli 0843 Cs Fire
+1909,Lolo Peak Fire
+1910,Chetco Bar Fire
+1911,Hurricane Harvey
+1912,Tropical Storm Harvey
+1913,Helena Fire
+1914,La Tuna Fire
+1915,Railroad Fire
+1916,Jolly Mountain Fire
+1917,Eagle Creek Fire
+1918,Mission Fire
+1919,Pier Fire
+1920,Uintah Fire
+1921,Hurricane Irma
+1922,Rice Ridge Fire
+1923,Alice Creek Fire
+1924,West Fork Fire
+1925,Moose Peak Fire
+1926,Highway 200 Fire Complex
+1927,Strawberry Fire
+1928,Hurricane Maria
+1929,Hurricane Irma - Seminole Tribe Of Florida
+1930,Tropical Storm Nate
+1931,"Severe Storms, Straight-Line Winds, Flooding, Landslides, And Mud"
+1932,Hurricane Nate
+1933,Canyon 2 Fire
+1934,Lobo Fire
+1935,Redwood Valley Fire
+1936,Atlas Fire
+1937,Nuns Fire
+1938,La Porte Fire
+1939,Partrick Fire
+1940,Cascade Fire
+1941,Sulphur Fire
+1942,Tubbs Fire
+1943,Thomas Fire
+1944,Rye Fire
+1945,Skirball Fire
+1946,Lilac Fire
+1947,Legion Lake Fire
+1948,"Wildfires, Flooding, Mudflows, And Debris Flows"
+1949,Tropical Storm Gita
+1950,Shumach Fire Complex
+1951,Rhea Fire Complex
+1952,Harbor Bay Fire
+1953,34 Fire Complex
+1954,335 Fire
+1955,"Severe Storms, Landslides, And Mudslides"
+1956,Mcclellan Fire
+1957,Tinder Fire
+1958,Mcdannald Fire
+1959,89 East Fire
+1960,Kilauea Volcanic Eruption And Earthquakes
+1961,Ute Park Fire
+1962,Soldier Canyon Fire
+1963,Badger Creek Fire
+1964,Upper Colony Fire
+1965,Graham Fire
+1966,Pawnee Fire
+1967,Spring Creek Fire
+1968,Chateau Fire
+1969,Dollar Ridge Fire
+1970,Lake Christine Fire
+1971,Klamathon Fire
+1972,Holiday Fire
+1973,Ryegrass Coulee Fire
+1974,Upriver Beacon Fire
+1975,Substation Fire
+1976,Garner Fire Complex
+1977,Buckshot Fire
+1978,Carr Fire
+1979,259 Fire
+1980,Cranston Fire
+1981,Mendocino Fire Complex
+1982,Chelan Hills Fire
+1983,Park Road Fire
+1984,Grassy Ridge Fire
+1985,South Valley Fire
+1986,Angel Springs Fire
+1987,Wildfires And High Winds
+1988,Hilltop Fire
+1989,Holy Fire
+1990,Hawk Fire
+1991,Cougar Creek Fire
+1992,Vineyard Fire
+1993,Boyd's Fire
+1994,Hurricane Lane
+1995,Ramsey Canyon Fire
+1996,Hugo Road Fire
+1997,Hurricane Florence
+1998,Typhoon Mangkhut
+1999,Severe Storm And Tornadoes
+2000,Tropical Storm Olivia
+2001,Roosevelt Fire
+2002,Bald Mountain Fire
+2003,Hurricane Michael
+2004,"Severe Storms, Tornadoes, Straight-Line Winds, Flooding, And Landslides"
+2005,Typhoon Yutu
+2006,Super Typhoon Yutu
+2007,Woolsey Fire
+2008,Tropical Storm Michael
+2009,"Severe Winter Storms, Straight-Line Winds, Flooding, Landslides, Mudslides, Tornado"
+2010,Ironworks Fire
+2011,"Severe Winter Storm, Straight-Line Winds, And Flooding"
+2012,Typhoon Wutip
+2013,Snowstorm And Flooding
+2014,Tornadoes And Flooding
+2015,"Severe Storms, Straight-Line Winds, Tornadoes, Flooding, Landslides, And Mudslide"
+2016,"Severe Storms, Straight-Line Winds, Tornadoes, Flooding,Landslides,And Mudslides"
+2017,Shovel Creek Fire
+2018,Tropical Storm Barry
+2019,Jasper Fire
+2020,Museum Fire
+2021,Mile Post 97 Fire
+2022,Copper Breaks Fire
+2023,Mckinley Fire
+2024,Deshka Landing Fire
+2025,Long Valley Fire
+2026,Hurricane Barry
+2027,Tropical Storm Dorian
+2028,Hurricane Dorian
+2029,Gun Range Fire
+2030,Tropical Storm Imelda
+2031,Typhoon Hagibis
+2032,Saddleridge Fire
+2033,Typhoon Bualoi
+2034,Kahana Ridge Fire
+2035,Tick Fire
+2036,Kincade Fire
+2037,Getty Fire
+2038,Easy Fire
+2039,Hillside Fire
+2040,46 Fire
+2041,Maria Fire
+2042,Cave Fire
+2043,Highway 50 Fire
+2044,Gauge Fire
+2045,Severe Storm And Straight-Line Winds
+2046,412 Fire Complex
+2047,Covid-19
+2048,Covid-19 Pandemic
+2049,5 Mile Swamp Fire
+2050,Mussett Bayou Fire
+2051,36th Avenue Fire
+2052,East Desert Fire
+2053,Ocotillo Fire
+2054,Tropical Storm Cristobal
+2055,Big Horn Fire
+2056,Bush Fire
+2057,Aquila Fire
+2058,Avondale Fire
+2059,Poeville Road Fire
+2060,Knolls Fire
+2061,Canal Fire
+2062,Numbers Fire
+2063,Earthquake And Aftershocks
+2064,Road 11 Fire
+2065,Veyo West Fire
+2066,Rockfarm Fire
+2067,Hurricane Douglas
+2068,Hurricane Hanna
+2069,Anglin Fire
+2070,Potential Tropical Cyclone Nine
+2071,Hurricane Isaias
+2072,Falling Star Fire
+2073,Apple Fire
+2074,Tropical Storm Isaias
+2075,Mosier Creek Fire
+2076,Loyalton Fire
+2077,River Fire
+2078,North Brownstown Fire
+2079,Jones Fire
+2080,Lnu Lightning Fire Complex
+2081,Grizzly Creek Fire
+2082,Pine Gulch Fire
+2083,Carmel Fire
+2084,Czu Lightning Fire Complex
+2085,Palmer Fire
+2086,Scu Ligtning Complex Fire
+2087,Tropical Storm Laura
+2088,Tropical Storms Laura  And Marco
+2089,Hurricane Marco And Tropical Storm Laura
+2090,Tropical Storms Marco And Laura
+2091,Griffin Fire
+2092,Hurricane Laura
+2093,White River Fire
+2094,Evans Canyon Fire
+2095,Huff Fire
+2096,Bobcat Fire
+2097,Snider/Rice Fire Complex
+2098,316 Fire
+2099,Bridger Foothills Fire
+2100,El Dorado Fire
+2101,Cameron Peak Fire
+2102,Cold Springs/Pearl Hill Fire
+2103,Ether Hollow Fire
+2104,Apple Acres Fire
+2105,Beachie Creek Lionshead Fire Complex
+2106,Holiday Farm Fire
+2107,Babb Fire
+2108,Two Four Two Fire
+2109,Echo Mountain Fire Complex
+2110,South Obenchain Fire
+2111,Bear Fire
+2112,Slater Fire
+2113,Riverside Fire
+2114,Almeda Glendower Fire
+2115,Archie Creek Fire
+2116,Bordeaux Road Fire
+2117,Sumner Grade Fire
+2118,Chehalem Mountain Bald Peak Fire
+2119,Pike Road Fire
+2120,Clakamas County Fire Complex
+2121,Brattain Fire
+2122,Sqf Fire Complex
+2123,Hurricane Sally
+2124,Wildfires And Straight-Line Winds
+2125,Mullen Fire
+2126,Glass Fire
+2127,Zogg Fire
+2128,Hurricane Delta
+2129,East Troublesome Fire
+2130,Calwood Fire
+2131,Blue Ridge Fire
+2132,Silverado Fire
+2133,Tropical Storm Zeta
+2134,Hurricane Zeta
+2135,Hurricane Eta
+2136,Bond Fire
+2137,59th Presidential Inauguration
+2138,Straight-Line Winds
+2139,"Severe Storm, Flooding, Landslides, And Mudslides"
+2140,Tropical Storm Eta
+2141,Schroeder Fire
+2142,"Severe Winter Storms, Landslides, And Mudslides"
+2143,Margo Fire
+2144,"Severe Winter Storm, Straight-Line Winds, Flooding, Landslides, And Mudslides"
+2145,"Severe, Storms, Flooding, Landslides, And Mudslides"
+2146,Three Rivers Fire
+2147,Spur Fire
+2148,Mammoth Fire
+2149,Telegraph Fire
+2150,Jacks Valley Fire
+2151,Pack Creek Fire
+2152,Robertson Draw Fire
+2153,Surfside Building Collapse
+2154,Lava Fire
+2155,0419 Fire
+2156,Tropical Storm Elsa
+2157,Andrus Fire
+2158,Bootleg Fire
+2159,Chuweah Creek Fire
+2160,Buffalo Wildfire
+2161,Dixie Fire
+2162,Tamarack Fire
+2163,Pf Fire
+2164,Mana Road Fire
+2165,Richard Spring Fire
+2166,Bedrock Fire
+2167,Parleys Canyon Fire
+2168,Ford Corkscrew Fire
+2169,Patton Meadow Fire
+2170,Muckamuck Fire
+2171,Tropical Storm Fred
+2172,Caldor Fire
+2173,Twentyfive Mile Fire
+2174,Schneider Springs Fire
+2175,Hurricane Henri
+2176,French Fire
+2177,Hurricane Ida
+2178,Remnants Of Hurricane Ida
+2179,Remnants Of Tropical Storm Fred
+2180,Tropical Storm Nicholas
+2181,Fawn Fire
+2182,Auburn Fire
+2183,Alisal Fire
+2184,"Severe Storms, Straight-Line Winds, Flooding, And Tornadoes"
+2185,North 207 Fire
+2186,Cobb Fire
+2187,Marshall Fire
+2188,Severe Storms And Straight Line Winds
+2189,"Severe Storms, Straight-Line Winds, Tornadoes, Flooding, Landslides"
+2190,1707 Adkins Ave Fire
+2191,Cottonwood Fire Complex
+2192,Chipola Fire Complex
+2193,Kidd Fire
+2194,Wheat Field Fire
+2195,Big L Fire
+2196,"Severe Winter Storms, Snowstorms, Straight-Line Winds, Floodin"
+2197,"Severe Storm, Flooding, And Landslides"
+2198,Big Hole Fire
+2199,Nogal Canyon Fire
+2200,Mcbride Fire
+2201,Hermit's Peak Fire
+2202,Crooks Fire
+2203,Tunnel 2 Fire
+2204,Road 702 Fire
+2205,Cook's Peak Fire
+2206,Calf Canyon Fire
+2207,"Wildfires, Straight-Line Winds, Flooding, Mudflows, And Debris Flows"
+2208,Coastal Fire
+2209,Mesquite Heat Fire
+2210,Severe Winter Storms And Straight-Line Winds
+2211,Clear Fire
+2212,"Severe Storm, Straight-Line Winds, Tornadoes, And Flooding"
+2213,Hard Castle Fire
+2214,Chalk Mountain Fire
+2215,Oak Fire
+2216,Water Shortage And Health Impact From Unprecedented Sargassum Seagrass Influx
+2217,Landslide
+2218,Miller Road Fire
+2219,Lind Fire
+2220,Joy Lake Fire
+2221,Four Corners Fire
+2222,Water Crisis
+2223,Mill Fire
+2224,Ross Fork Fire
+2225,Fairview Fire
+2226,Mosquito Fire
+2227,Bolt Creek Fire
+2228,Milo Mciver Fire
+2229,"High Surf, High Winds, And Flooding"
+2230,Tropical Storm Fiona
+2231,Hurricane Fiona
+2232,Tropical Storm Ian
+2233,Hurricane Ian
+2234,Hurricane Ian - Seminole Tribe Of Florida
+2235,Nakia Creek Fire
