@@ -6,7 +6,7 @@ CREATE TABLE incident_types (
 CREATE TABLE states (
     id INTEGER,
     name TEXT
-)
+);
 
 CREATE TABLE declaration_titles (
     id INTEGER,
@@ -23,7 +23,6 @@ CREATE TABLE disasters (
     incident_type_id INTEGER,
     state_id INTEGER,
     declaration_title_id INTEGER,
-    programs_declared_id INTEGER, 
     year INTEGER, 
     ih_program INTEGER, 
     ia_program INTEGER, 
