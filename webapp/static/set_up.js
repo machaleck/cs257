@@ -7,7 +7,7 @@
 window.onload = initialize;
 
 function initialize() {
-    loadAuthorsSelector();
+    loadStatesSelector();
 
     let element = document.getElementById('state_selector');
     // if (element) {
@@ -25,7 +25,7 @@ function getAPIBaseURL() {
     return baseURL;
 }
 
-function loadAuthorsSelector() {
+function loadStatesSelector() {
     let url = getAPIBaseURL() + '/states/';
 
     // Send the request to the books API /authors/ endpoint
