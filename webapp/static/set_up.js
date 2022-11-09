@@ -8,6 +8,7 @@ window.onload = initialize;
 
 function initialize() {
     loadStatesSelector();
+    loadYearsSelector();
 
     let element = document.getElementById('state_selector');
     // if (element) {
@@ -61,6 +62,41 @@ function loadStatesSelector() {
     });
 }
 
+function loadYearsSelector() {
+    let url = getAPIBaseURL() + '/years/';
+
+    // Send the request to the books API /authors/ endpoint
+    fetch(url, {method: 'get'})
+
+    // When the results come back, transform them from a JSON string into
+    // a Javascript object (in this case, a list of author dictionaries).
+    .then((response) => response.json())
+
+    // Once you have your list of author dictionaries, use it to build
+    // an HTML table displaying the author names and lifespan.
+    .then(function(years) {
+        // Add the <option> elements to the <select> element
+        let selectorBody = '<option selected>choose a year...</option>\n';
+        id = 1
+        for (let k = 0; k < years.length; k++) {
+            let year = years[k];
+            selectorBody += '<option value="' + id + '">'
+                                + year['year']
+                                + '</option>\n';
+            id +=1
+        }
+
+        let selector = document.getElementById('year_selector');
+        if (selector) {
+            selector.innerHTML = selectorBody;
+        }
+    })
+
+    // Log the error if anything went wrong during the fetch.
+    .catch(function(error) {
+        console.log(error);
+    });
+}
 // function onAuthorsSelectionChanged() {
 //     let element = document.getElementById('state_selector');
 //     if (!element) {

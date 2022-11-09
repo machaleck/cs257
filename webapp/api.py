@@ -48,7 +48,35 @@ def get_states():
     except Exception as e:
         print(e, file=sys.stderr)
     return json.dumps(state_list)
-get_states()
+
+@api.route('/years/') 
+def get_years():
+    ''' Returns a list of all the years in our database.
+
+        By default, the list is presented in alphabetical order
+        by state name.
+
+            http://.../years/
+
+        Returns an empty list if there's any database failure.
+    '''
+    query = '''SELECT years.year
+               FROM years ORDER BY years.year'''
+
+    year_list = []
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        cursor.execute(query, tuple())
+        for row in cursor:
+            year = {'year':row[0]}
+            year_list.append(year)
+        cursor.close()
+        connection.close()
+    except Exception as e:
+        print(e, file=sys.stderr)
+    return json.dumps(year_list)
+
 # @api.route('/books/author/<author_id>')
 # def get_books_for_author(author_id):
 #     query = '''SELECT books.id, books.title, books.publication_year
