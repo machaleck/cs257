@@ -32,23 +32,19 @@
     <div class=".container-fluid">
         <div class=" mx-1 row align-items-start">
             <div class="col-2 pb-5 bg-light">
-                <h3>State</h3>
+                <h3>State/Territory</h3>
                 <select id = "state_selector" class="form-select form-select-sm" aria-label="Default select example">
                 </select>
                 <h3>Start Year</h3>
-                <select id = "year_selector" class="form-select form-select-sm" aria-label="Default select example">
+                <select id = "year_selector" class="year_selector form-select form-select-sm" aria-label="Default select example">
                 </select>
                 </select>
                 <h3>End Year</h3>
-                <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected>choose a year...</option>
-                    <option value="1">1900</option>
-                    <option value="2">2000</option>
-                    <option value="3">2100</option>
+                <select class="year_selector form-select form-select-sm" aria-label="Default select example">
                 </select>
 
                 <h3>Incident Type</h3>
-                <select class="form-select form-select-sm" aria-label="Default select example">
+                <select id = "incident_type" class="form-select form-select-sm" aria-label="Default select example">
                     <option selected>choose an incident...</option>
                     <option value="1">Tornado</option>
                     <option value="2">Hurricane</option>

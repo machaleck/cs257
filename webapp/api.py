@@ -53,8 +53,8 @@ def get_states():
 def get_years():
     ''' Returns a list of all the years in our database.
 
-        By default, the list is presented in alphabetical order
-        by state name.
+        By default, the list is presented in ascending order
+        by year.
 
             http://.../years/
 
@@ -76,6 +76,34 @@ def get_years():
     except Exception as e:
         print(e, file=sys.stderr)
     return json.dumps(year_list)
+
+@api.route('/incidents/') 
+def get_incidents():
+    ''' Returns a list of all the incidents in our database.
+
+        By default, the list is presented in alphabetical order
+        by incident name.
+
+            http://.../incidents/
+
+        Returns an empty list if there's any database failure.
+    '''
+    query = '''SELECT incident_types.incident
+               FROM incident_types ORDER BY incident_types.incident'''
+
+    incident_types_list = []
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        cursor.execute(query, tuple())
+        for row in cursor:
+            incident_type = {'incident_type' :row[0]}
+            incident_types_list.append(incident_type)
+        cursor.close()
+        connection.close()
+    except Exception as e:
+        print(e, file=sys.stderr)
+    return json.dumps(incident_types_list)
 
 # @api.route('/books/author/<author_id>')
 # def get_books_for_author(author_id):
