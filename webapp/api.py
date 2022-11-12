@@ -3,7 +3,6 @@
     Jeff Ondich, 25 April 2016
     Updated 8 November 2021
 
-    Tiny Flask API to support the tiny books web application.
 '''
 import sys
 import flask
@@ -105,16 +104,18 @@ def get_incidents():
         print(e, file=sys.stderr)
     return json.dumps(incident_types_list)
 
-@api.route('/natural_disasters?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident}&ih_program={true_false}&ia_program={true_false}&pa_program={true_false}&hm_program={true_false}')
-def get_disasters():
+@api.route('/natural_disasters?<state>&<start_year>&<end_year>&<incident_type>&<ih_program>&<ia_program>&<pa_program>&<hm_program>')
+def get_disasters(state, start_year, end_year, incident_type, ih_program, ia_program, pa_program, hm_program):
     query = '''SELECT states.name, declaration_titles.title, incident_types.incident, years.year, disasters.ih_program, disasters.ia_program, disasters.pa_program, disasters.hm_program
                FROM incident_types, states, declaration_titles, years, disasters
                WHERE incident_types.id = disasters.incident_type_id
                 AND states.id = disasters.state_id
                 AND declaration_titles.id = disasters.declaration_title_id
                 AND years.id = disasters.year'''
+    print(state)
     where_clause_args = []
     state = flask.request.args.get("state")
+    print(state)
     start_year = flask.request.args.get("start_year")
     end_year = flask.request.args.get("end_year")
     incident_type = flask.request.args.get("incident_type")

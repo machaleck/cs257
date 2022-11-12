@@ -10,6 +10,7 @@ function initialize() {
     loadStatesSelector();
     loadYearsSelector();
     loadIncidentTypesSelector();
+    loadTableData();
 
     let element = document.getElementById('state_selector');
     // if (element) {
@@ -28,7 +29,8 @@ function getAPIBaseURL() {
 }
 
 function loadTableData() {
-    let url = getAPIBaseURL() + '/natural_disasters?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident}&ih_program={true_false}&ia_program={true_false}&pa_program={true_false}&hm_program={true_false}';
+    console.log("Hi I'm load table and am running. ")
+    let url = getAPIBaseURL() + '/natural_disasters?<state>&<start_year>&<end_year>&<incident_type>&<ih_program>&<ia_program>&<pa_program>&<hm_program>';
 
     // Send the request to the books API /authors/ endpoint
     fetch(url, { method: 'get' })
@@ -216,3 +218,7 @@ function loadIncidentTypesSelector() {
 //         console.log(error);
 //     });
 // }
+
+
+
+///natural_disasters?state=NY&start_year=2002&end_year=2020&incident_type=incident&ih_program=1&ia_program=1&pa_program=1&hm_program=1
