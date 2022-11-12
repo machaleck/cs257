@@ -15,7 +15,7 @@ function initialize() {
     // if (element) {
     //     element.onchange = onAuthorsSelectionChanged;
     // }
-}
+} 
 
 // Returns the base URL of the API, onto which endpoint
 // components can be appended.
@@ -25,6 +25,46 @@ function getAPIBaseURL() {
         + ':' + window.location.port
         + '/api';
     return baseURL;
+}
+
+function loadTableData() {
+    let url = getAPIBaseURL() + '/natural_disasters?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident}&ih_program={true_false}&ia_program={true_false}&pa_program={true_false}&hm_program={true_false}';
+
+    // Send the request to the books API /authors/ endpoint
+    fetch(url, { method: 'get' })
+
+        // When the results come back, transform them from a JSON string into
+        // a Javascript object (in this case, a list of author dictionaries).
+        .then((response) => response.json())
+
+        // Once you have your list of author dictionaries, use it to build
+        // an HTML table displaying the author names and lifespan.
+        .then(function (disasters) {
+            // Add the <option> elements to the <select> element
+            let selectorBody = '<thead><tr><th>State</th><th>Declaration Title</th><th>Incident Type</th><th>Programs Declared</th><th>Start date</th></tr></thead><tbody>\n';
+            id = 1
+            for (let k = 0; k < disasters.length; k++) {
+                let disaster = disasters[k];
+                selectorBody += '<tr> <td>' + disaster[state]
+                + '</td>'
+                
+                '<option value="' + id + '">'
+                    + state['name']
+                    + '</option>\n';
+                id += 1
+            }
+            selectorBody += "</tbody>"
+
+            let selector = document.getElementById('example');
+            if (selector) {
+                selector.innerHTML = selectorBody;
+            }
+        })
+
+        // Log the error if anything went wrong during the fetch.
+        .catch(function (error) {
+            console.log(error);
+        });
 }
 
 function loadStatesSelector() {

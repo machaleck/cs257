@@ -105,26 +105,59 @@ def get_incidents():
         print(e, file=sys.stderr)
     return json.dumps(incident_types_list)
 
-# @api.route('/books/author/<author_id>')
-# def get_books_for_author(author_id):
-#     query = '''SELECT books.id, books.title, books.publication_year
-#                FROM books, authors, books_authors
-#                WHERE books.id = books_authors.book_id
-#                  AND authors.id = books_authors.author_id
-#                  AND authors.id = %s
-#                ORDER BY books.publication_year'''
-#     book_list = []
-#     try:
-#         connection = get_connection()
-#         cursor = connection.cursor()
-#         cursor.execute(query, (author_id,))
-#         for row in cursor:
-#             book = {'id':row[0], 'title':row[1], 'publication_year':row[2]}
-#             book_list.append(book)
-#         cursor.close()
-#         connection.close()
-#     except Exception as e:
-#         print(e, file=sys.stderr)
+@api.route('/natural_disasters?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident}&ih_program={true_false}&ia_program={true_false}&pa_program={true_false}&hm_program={true_false}')
+def get_disasters():
+    query = '''SELECT states.name, declaration_titles.title, incident_types.incident, years.year, disasters.ih_program, disasters.ia_program, disasters.pa_program, disasters.hm_program
+               FROM incident_types, states, declaration_titles, years, disasters
+               WHERE incident_types.id = disasters.incident_type_id
+                AND states.id = disasters.state_id
+                AND declaration_titles.id = disasters.declaration_title_id
+                AND years.id = disasters.year'''
+    where_clause_args = []
+    state = flask.request.args.get("state")
+    start_year = flask.request.args.get("start_year")
+    end_year = flask.request.args.get("end_year")
+    incident_type = flask.request.args.get("incident_type")
+    ih_program = flask.request.args.get("ih_program")
+    ia_program = flask.request.args.get("ia_program")
+    pa_program = flask.request.args.get("pa_program")
+    hm_program = flask.request.args.get("hm_program")
 
-#     return json.dumps(book_list)
+    if state is not None: 
+        query += ' AND state.name = %s'
+        where_clause_args.append(state)
+    if start_year is not None: 
+        query += ' AND years.year >= %s'
+        where_clause_args.append(start_year)
+    if end_year is not None: 
+        query += ' AND years.year <= %s'
+        where_clause_args.append(end_year)
+    if incident_type is not None: 
+        query += ' AND incident_types.incident = %s'
+        where_clause_args.append(incident_type)
+    if ih_program is not None: 
+        query += ' AND disasters.ih_program = 1'
+    if ia_program is not None: 
+        query += ' AND disasters.ia_program = 1'
+    if pa_program is not None: 
+        query += ' AND disasters.pa_program = 1'
+    if hm_program is not None: 
+        query += ' AND disasters.hm_program = 1'
+
+    query+= 'ORDER BY year.years'
+
+    disaster_list = []
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        cursor.execute(query, where_clause_args)
+        for row in cursor:
+            disaster = {'state':row[0], 'declaration_title':row[1], 'incident_type':row[2], 'programs':f'{row[3]}, {row[4]}, {row[5]}, {row[6]}' }
+            disaster_list.append(disaster)
+        cursor.close()
+        connection.close()
+    except Exception as e:
+        print(e, file=sys.stderr)
+
+    return json.dumps(disaster_list)
 
