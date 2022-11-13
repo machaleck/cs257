@@ -30,7 +30,7 @@ function getAPIBaseURL() {
 
 function loadTableData() {
     console.log("Hi I'm load table and am running. ")
-    let url = getAPIBaseURL() + '/natural_disasters?<state>&<start_year>&<end_year>&<incident_type>&<ih_program>&<ia_program>&<pa_program>&<hm_program>';
+    let url = getAPIBaseURL() + '/natural_disasters?state=NY';
 
     // Send the request to the books API /authors/ endpoint
     fetch(url, { method: 'get' })
@@ -38,10 +38,9 @@ function loadTableData() {
         // When the results come back, transform them from a JSON string into
         // a Javascript object (in this case, a list of author dictionaries).
         .then((response) => response.json())
-
         // Once you have your list of author dictionaries, use it to build
         // an HTML table displaying the author names and lifespan.
-        .then(function (disasters) {
+        .then(function(disasters) {
             // Add the <option> elements to the <select> element
             let selectorBody = '<thead><tr><th>State</th><th>Declaration Title</th><th>Incident Type</th><th>Programs Declared</th><th>Start date</th></tr></thead><tbody>\n';
             id = 1
@@ -58,14 +57,14 @@ function loadTableData() {
             selectorBody += "</tbody>"
 
             let selector = document.getElementById('example');
+            console.log("yo I'm running")
             if (selector) {
                 selector.innerHTML = selectorBody;
             }
         })
-
         // Log the error if anything went wrong during the fetch.
         .catch(function (error) {
-            console.log(error);
+            console.log(error);    
         });
 }
 

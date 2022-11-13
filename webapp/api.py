@@ -104,15 +104,15 @@ def get_incidents():
         print(e, file=sys.stderr)
     return json.dumps(incident_types_list)
 
-@api.route('/natural_disasters?<state>&<start_year>&<end_year>&<incident_type>&<ih_program>&<ia_program>&<pa_program>&<hm_program>')
-def get_disasters(state, start_year, end_year, incident_type, ih_program, ia_program, pa_program, hm_program):
+@api.route('/natural_disasters', methods= ['GET'])
+def get_disasters():
+    
     query = '''SELECT states.name, declaration_titles.title, incident_types.incident, years.year, disasters.ih_program, disasters.ia_program, disasters.pa_program, disasters.hm_program
                FROM incident_types, states, declaration_titles, years, disasters
                WHERE incident_types.id = disasters.incident_type_id
                 AND states.id = disasters.state_id
                 AND declaration_titles.id = disasters.declaration_title_id
                 AND years.id = disasters.year'''
-    print(state)
     where_clause_args = []
     state = flask.request.args.get("state")
     print(state)
@@ -125,7 +125,7 @@ def get_disasters(state, start_year, end_year, incident_type, ih_program, ia_pro
     hm_program = flask.request.args.get("hm_program")
 
     if state is not None: 
-        query += ' AND state.name = %s'
+        query += ' AND states.name = %s'
         where_clause_args.append(state)
     if start_year is not None: 
         query += ' AND years.year >= %s'
@@ -145,7 +145,7 @@ def get_disasters(state, start_year, end_year, incident_type, ih_program, ia_pro
     if hm_program is not None: 
         query += ' AND disasters.hm_program = 1'
 
-    query+= 'ORDER BY year.years'
+    query+= ' ORDER BY years.year'
 
     disaster_list = []
     try:
@@ -160,5 +160,6 @@ def get_disasters(state, start_year, end_year, incident_type, ih_program, ia_pro
     except Exception as e:
         print(e, file=sys.stderr)
 
+    #print(disaster_list)
     return json.dumps(disaster_list)
 
