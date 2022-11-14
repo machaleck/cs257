@@ -49,7 +49,6 @@ function loadTableData() {
             }
             url += key + '=' + selector_value;
             a+=1
-
         }
     }
     console.log(url)
