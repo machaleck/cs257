@@ -10,7 +10,6 @@ function initialize() {
     loadStatesSelector();
     loadYearsSelector();
     loadIncidentTypesSelector();
-    loadTableData();
 
     let element = document.getElementById('state_selector');
     // if (element) {
@@ -28,10 +27,37 @@ function getAPIBaseURL() {
     return baseURL;
 }
 
+function searchInit() {
+   $(document).ready(function () {
+        $('#example').DataTable();
+    });
+}
+
 function loadTableData() {
     console.log("Hi I'm load table and am running. ")
-    let url = getAPIBaseURL() + '/natural_disasters?state=NY';
+    let url = getAPIBaseURL() + '/natural_disasters?';
+    selectors = { 'state' : 'state_selector', 
+    'start_year' : 'start_year_selector',
+    'end_year' : 'end_year_selector',
+    'incident_type' : 'incident_type'
+    };
 
+    let a = 0;
+    for (let key in selectors){
+        let selector = document.getElementById(selectors[key]);
+        console.log("hi")
+        if (!selector.value.includes("choose")) {
+            let selector_value = selector.value;
+            console.log(selector_value);
+            if (a!=0 && a<Object.keys(selectors).length){
+                url += '&'
+            }
+            url += key + '=' + selector_value;
+            a+=1
+
+        }
+    }
+    console.log(url)
     // Send the request to the books API /authors/ endpoint
     fetch(url, { method: 'get' })
 
@@ -46,15 +72,14 @@ function loadTableData() {
             id = 1
             for (let k = 0; k < disasters.length; k++) {
                 let disaster = disasters[k];
-                selectorBody += '<tr> <td>' + disaster[state]
-                + '</td>'
-                
-                '<option value="' + id + '">'
-                    + state['name']
-                    + '</option>\n';
-                id += 1
+                selectorBody += '<tr> <td>' + disaster['state']
+                + '</td> <td>' + disaster['declaration_title']
+                + '</td> <td>' + disaster['incident_type']
+                + '</td> <td>' + disaster['programs']
+                + '</td> <td>' + disaster['year']
+                + '</td></tr>'
             }
-            selectorBody += "</tbody>"
+            selectorBody += " </tbody><tfoot><tr><th>State</th><th>Declaration Title</th><th>Incident Type</th><th>Programs Declared</th><th>Start date</th></tr></tfoot>\n"
 
             let selector = document.getElementById('example');
             console.log("yo I'm running")
@@ -86,7 +111,7 @@ function loadStatesSelector() {
             id = 1
             for (let k = 0; k < states.length; k++) {
                 let state = states[k];
-                selectorBody += '<option value="' + id + '">'
+                selectorBody += '<option value="' + state['name'] + '">'
                     + state['name']
                     + '</option>\n';
                 id += 1
@@ -119,13 +144,11 @@ function loadYearsSelector() {
         .then(function (years) {
             // Add the <option> elements to the <select> element
             let selectorBody = '<option selected>choose a year...</option>\n';
-            id = 1
             for (let k = 0; k < years.length; k++) {
                 let year = years[k];
-                selectorBody += '<option value="' + id + '">'
+                selectorBody += '<option value="' + year['year'] + '">'
                     + year['year']
                     + '</option>\n';
-                id += 1
             }
 
             let selectors = document.getElementsByClassName('year_selector');
@@ -162,14 +185,14 @@ function loadIncidentTypesSelector() {
             console.log(incidents);
             // Add the <option> elements to the <select> element
             let selectorBody = '<option selected>choose an incident...</option>\n';
-            id = 1
+
             for (let k = 0; k < incidents.length; k++) {
                 let incident_type = incidents[k];
                 console.log(incident_type)
-                selectorBody += '<option value="' + id + '">'
+                selectorBody += '<option value="' + incident_type["incident_type"] + '">'
                     + incident_type["incident_type"]
                     + '</option>\n';
-                id += 1
+
             }
 
             let selector = document.getElementById('incident_type');

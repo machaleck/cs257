@@ -153,7 +153,7 @@ def get_disasters():
         cursor = connection.cursor()
         cursor.execute(query, where_clause_args)
         for row in cursor:
-            disaster = {'state':row[0], 'declaration_title':row[1], 'incident_type':row[2], 'programs':f'{row[3]}, {row[4]}, {row[5]}, {row[6]}' }
+            disaster = {'state':row[0], 'declaration_title':row[1], 'incident_type':row[2], 'programs':f'{row[4]}, {row[5]}, {row[6]}, {row[7]}', 'year':row[3]  }
             disaster_list.append(disaster)
         cursor.close()
         connection.close()
