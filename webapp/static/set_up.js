@@ -27,12 +27,6 @@ function getAPIBaseURL() {
     return baseURL;
 }
 
-function searchInit() {
-    var table = $('#example').DataTable();
-    table.clear();
-    
-}
-
 function loadTableData() {
     console.log("Hi I'm load table and am running. ")
     let url = getAPIBaseURL() + '/natural_disasters?';
