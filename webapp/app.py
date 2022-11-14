@@ -17,6 +17,14 @@ app.register_blueprint(api.api, url_prefix='/api')
 def home():
     return flask.render_template('index.html')
 
+@app.route('/data_analysis')
+def graphs():
+    return flask.render_template('mockup1.html')
+
+@app.route('/about_us')
+def aboutUs():
+    return flask.render_template('mockup2.html')
+
 @app.route('/natural_disasters')
 def search():
     return flask.render_template('search_results.html')
