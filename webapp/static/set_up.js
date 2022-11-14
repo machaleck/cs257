@@ -28,9 +28,9 @@ function getAPIBaseURL() {
 }
 
 function searchInit() {
-   $(document).ready(function () {
-        $('#example').DataTable();
-    });
+    var table = $('#example').DataTable();
+    table.clear();
+    
 }
 
 function loadTableData() {
@@ -42,6 +42,7 @@ function loadTableData() {
     'incident_type' : 'incident_type'
     };
 
+    //Think about this code with a loop to see if it is more mantainable than the 4 seperate cases. 
     let a = 0;
     for (let key in selectors){
         let selector = document.getElementById(selectors[key]);
@@ -68,24 +69,20 @@ function loadTableData() {
         // an HTML table displaying the author names and lifespan.
         .then(function(disasters) {
             // Add the <option> elements to the <select> element
-            let selectorBody = '<thead><tr><th>State</th><th>Declaration Title</th><th>Incident Type</th><th>Programs Declared</th><th>Start date</th></tr></thead><tbody>\n';
+            let selectorBody = [];
             id = 1
             for (let k = 0; k < disasters.length; k++) {
                 let disaster = disasters[k];
-                selectorBody += '<tr> <td>' + disaster['state']
-                + '</td> <td>' + disaster['declaration_title']
-                + '</td> <td>' + disaster['incident_type']
-                + '</td> <td>' + disaster['programs']
-                + '</td> <td>' + disaster['year']
-                + '</td></tr>'
+                selectorBody.push([disaster['state'], disaster['declaration_title'],disaster['incident_type'],disaster['programs'],disaster['year']])
             }
-            selectorBody += " </tbody><tfoot><tr><th>State</th><th>Declaration Title</th><th>Incident Type</th><th>Programs Declared</th><th>Start date</th></tr></tfoot>\n"
-
-            let selector = document.getElementById('example');
-            console.log("yo I'm running")
-            if (selector) {
-                selector.innerHTML = selectorBody;
-            }
+            // let selector = document.getElementById('example');
+            // console.log("yo I'm running")
+            // if (selector) {
+            //     selector.innerHTML = selectorBody;
+            // }
+            var table = $('#example').DataTable();
+            table.clear();
+            table.rows.add(selectorBody).draw(); 
         })
         // Log the error if anything went wrong during the fetch.
         .catch(function (error) {

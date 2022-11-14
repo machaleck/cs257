@@ -17,7 +17,7 @@ app.register_blueprint(api.api, url_prefix='/api')
 def home():
     return flask.render_template('index.html')
 
-@app.route('/natural_disasters', methods=['GET'])
+@app.route('/natural_disasters')
 def search():
     return flask.render_template('search_results.html')
 
