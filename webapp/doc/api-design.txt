@@ -1,22 +1,18 @@
 Ryan Dunn and Kyle Machalec
 
-REQUEST: /natural_disasters?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident_requested}&programs={programs_requested}
+REQUEST: /natural_disasters?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident_requested}
 
 RESPONSE: A JSON list of dictionaries, each of which represents one disaster, filtered by the users requests for the following parameters:
     - state
     - start year
     - end year
     - incident type 
-    - programs enacted
 The list will then be sorted by start year. 
 
-The first item in the list will be a dicitonary containing: 
-    count -- (num) the number of results from the search. 
 All of the disasters following in the dictionary will have the following fields: 
     declaration_title -- (string) the name of the disaster.
     state -- (string) the state.
-    start_year -- (int) the start year of the disaster.
-    end_year -- (int) the end year of the disaster.
+    year -- (int) the start year of the disaster.
     incident_type -- (string) the type of disaster. ex: Hurricane, Tornado
     programs -- (string) which type of programs were declared after the disaster.
 

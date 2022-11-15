@@ -173,3 +173,44 @@ def get_disasters():
     #print(disaster_list)
     return json.dumps(disaster_list)
 
+@api.route('/help')
+def help():
+
+
+    return '''REQUEST: /natural_disasters?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident_requested}
+
+RESPONSE: A JSON list of dictionaries, each of which represents one disaster, filtered by the users requests for the following parameters:
+    - state
+    - start year
+    - end year
+    - incident type 
+The list will then be sorted by start year. 
+
+All of the disasters following in the dictionary will have the following fields: 
+    declaration_title -- (string) the name of the disaster.
+    state -- (string) the state.
+    year -- (int) the start year of the disaster.
+    incident_type -- (string) the type of disaster. ex: Hurricane, Tornado
+    programs -- (string) which type of programs were declared after the disaster.
+
+EXAMPLE: /natural_disasters?state=CA&start_year=1957&end_year=1958&incident_type=Fire
+[{"state": "CA", "declaration_title": "Forest Fire", "incident_type": "Fire", "programs": "ia pa hm ", "year": 1957}]
+
+
+REQUEST: /states
+
+RESPONSE: A JSON list of states sorted alphabetically. 
+
+
+REQUEST: /years
+
+RESPONSE: A JSON list of years sorted by year. 
+
+
+REQUEST: /incident_types
+
+RESPONSE: A JSON list of incident types sorted alphabetically.
+
+
+
+'''
