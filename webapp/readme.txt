@@ -1,27 +1,16 @@
-Running the books/authors web application
-CS257 Software Design
-Winter 2021
-Jeff Ondich
+AUTHORS: Kyle Machalec and Ryan Dunn
 
-0. Read all the code!
+DATA: Our dataset contains data from the Federal Emergency Management Agency (FEMA) 
+relating to natural disasters occurring in the US over time, and it contains information 
+about federal aid programs that were declared as well as the time and length of each disaster.
 
-This sample contains simple examples of all or nearly all of the techniques you will need to complete your web application. Read the code, collect questions, and ask them.
+FEATURES CURRENTLY WORKING:
+- Search feature on index.html with filters
+- Pagination
+- Text search bar of table on index.html
+- Click headers in table to sort by that header value. Alternates between high to low and low to high.
+- Beautiful about us page
 
-To run this example on your own machine
-
-- Set up the database of books and authors. See app3-api-and-db/data/readme.txt for instructions.
-
-- Pick your port. I'll use 5000 in my examples
-
-- Change config.py to use whatever database, user, and password works on your machine.
-
-- Launch the web application & API
-
-    python3 books_webapp.py 127.0.0.1 5000
-
-- Try it out. Direct your browser to:
-
-    http://127.0.0.1:5000/
-
-Assuming all goes well, you'll be able to click on the "Get Authors" button and get the list of authors.
-
+FEATURES NOT YET WORKING:
+- Data analysis page has javascript graphs with filler data
+- Search function does not work on the data analysis page. Search function is intended to modify graphs in the future.
