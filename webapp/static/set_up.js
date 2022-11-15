@@ -11,6 +11,9 @@ function initialize() {
     loadYearsSelector();
     loadIncidentTypesSelector();
 
+    x = document.getElementById("shy")
+    x.style.display = "none"
+
     let element = document.getElementById('state_selector');
     // if (element) {
     //     element.onchange = onAuthorsSelectionChanged;
@@ -27,6 +30,16 @@ function getAPIBaseURL() {
     return baseURL;
 }
 
+
+function hide() {  
+    var hide = document.getElementsByClassName("hide_me")
+    var show = document.getElementById("shy")
+    for (let i = 0; i < hide.length; i++){
+        console.log(hide[i])
+        hide[i].style.display = "none"
+    }
+    show.style.display= "block"
+}
 function loadTableData() {
     console.log("Hi I'm load table and am running. ")
     let url = getAPIBaseURL() + '/natural_disasters?';

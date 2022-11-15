@@ -27,7 +27,7 @@ def aboutUs():
 
 @app.route('/natural_disasters')
 def search():
-    return flask.render_template('search_results.html')
+    return flask.render_template('search_results.html', )
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('A disaster application, including API & DB')
