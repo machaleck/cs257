@@ -10,9 +10,10 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="../static/graphs.js"></script>
+    <script src ="../static/set_up.js"></script>
 </head>
 
-<body onload= "numDisastersPerYear('numDis');typesOfDisasters('typesOfDisasters');numProgramsPerYear('numPerYear');">
+<body onload= "numDisastersPerYear('numDis');typesOfDisasters('typesOfDisasters');numProgramsPerYear('numPerYear');initializeData();">
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand">Natural Disaster Records</a>
@@ -32,44 +33,22 @@
     <div class=".container-fluid">
         <div class=" mx-1 row align-items-start">
             <div class="col-2 pb-5 bg-light">
-                <h3>State</h3>
-                <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected>choose a state...</option>
-                    <option value="1">New York</option>
-                    <option value="2">Minnesota</option>
-                    <option value="3">California</option>
+                <h3>State/Territory</h3>
+                <select id="state_selector" class="form-select form-select-sm" aria-label="Default select example">
                 </select>
                 <h3>Start Year</h3>
-                <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected>choose a year...</option>
-                    <option value="1">1900</option>
-                    <option value="2">2000</option>
-                    <option value="3">2100</option>
+                <select id="start_year_selector" class="year_selector form-select form-select-sm"
+                    aria-label="Default select example">
                 </select>
                 </select>
                 <h3>End Year</h3>
-                <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected>choose a year...</option>
-                    <option value="1">1900</option>
-                    <option value="2">2000</option>
-                    <option value="3">2100</option>
+                <select id= "end_year_selector" class="year_selector form-select form-select-sm" aria-label="Default select example">
                 </select>
 
-
-                <h3>Program</h3>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Individual Assistance Program
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Public Assistance Program
-                    </label>
-                </div>
-                <button type="button" class="btn btn-outline-primary btn-sm">Search</button>
+                <h3>Incident Type</h3>
+                <select id="incident_type" class="form-select form-select-sm" aria-label="Default select example">
+                </select>
+                <button type="button" onclick="numDisastersPerYear()"class="my-2 btn btn-outline-primary btn-sm">Search</button>
             </div>
             
             <div class="col-4">

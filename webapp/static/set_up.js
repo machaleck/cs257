@@ -43,7 +43,7 @@ function hide() {
 function loadTableData() {
     console.log("Hi I'm load table and am running. ")
     let url = getAPIBaseURL() + '/natural_disasters?';
-    selectors = { 'state' : 'state_selector', 
+    selectors = { 'state' : 'state_selectors', 
     'start_year' : 'start_year_selector',
     'end_year' : 'end_year_selector',
     'incident_type' : 'incident_type'

@@ -20,6 +20,71 @@ def get_connection():
                             user=config.user,
                             password=config.password)
 
+
+
+@api.route('/disasters_year/', methods= ['GET']) 
+def get_year_data():
+    ''' Returns graph stuff.
+
+        By default, the list is presented in graph order. 
+
+            http://.../disasters_year/
+
+        Returns an empty list if there's any database failure.
+    '''
+    query = '''SELECT states.name, years.year, incident_types.incident
+                FROM incident_types, states, years, disasters
+                WHERE incident_types.id = disasters.incident_type_id
+                AND states.id = disasters.state_id
+                AND years.id = disasters.year'''
+    where_clause_args = []
+    state = flask.request.args.get("state")
+    start_year = flask.request.args.get("start_year")
+    end_year = flask.request.args.get("end_year")
+    incident_type = flask.request.args.get("incident_type")
+
+    if state is not None: 
+        query += ' AND states.name = %s'
+        where_clause_args.append(state)
+    if start_year is not None: 
+        query += ' AND years.year >= %s'
+        where_clause_args.append(start_year)
+    if end_year is not None: 
+        query += ' AND years.year <= %s'
+        where_clause_args.append(end_year)
+    if incident_type is not None: 
+        query += ' AND incident_types.incident = %s'
+        where_clause_args.append(incident_type)
+
+    query += ' ORDER BY years.year'
+    years = {
+
+    }
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        cursor.execute(query, where_clause_args)
+        for row in cursor:
+            if row[1] in years:
+                years[row[1]] = years[row[1]] + 1
+            else:
+                years.update({row[1]: 1})
+        cursor.close()
+        connection.close()
+    except Exception as e:
+        print(e, file=sys.stderr)
+    
+    year_list = list(years.keys())
+    num_occurences = list(years.values())
+    colors=[]
+
+    color_options = ["red", "green", "blue", "orange", "brown"]
+    for item in year_list:
+        for color in color_options:
+            colors.append(color)
+
+    return json.dumps([year_list, num_occurences, colors])
+
 @api.route('/states/') 
 def get_states():
     ''' Returns a list of all the states in our database.
