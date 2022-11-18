@@ -14,7 +14,7 @@ function initialize() {
     x = document.getElementById("shy")
     x.style.display = "none"
 
-    let element = document.getElementById('state_selector');
+    let element = document.getElementById('state_selectors');
     // if (element) {
     //     element.onchange = onAuthorsSelectionChanged;
     // }
@@ -120,7 +120,7 @@ function loadStatesSelector() {
                 id += 1
             }
 
-            let selector = document.getElementById('state_selector');
+            let selector = document.getElementById('state_selectors');
             if (selector) {
                 selector.innerHTML = selectorBody;
             }
