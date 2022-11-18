@@ -22,7 +22,7 @@ def get_connection():
 
 
 
-@api.route('/disasters_year/', methods= ['GET']) 
+@api.route('/disasters_year', methods= ['GET']) 
 def get_year_data():
     ''' Returns graph stuff.
 
@@ -79,11 +79,20 @@ def get_year_data():
     colors=[]
 
     color_options = ["red", "green", "blue", "orange", "brown"]
-    for item in year_list:
-        for color in color_options:
-            colors.append(color)
+    a=0
+    for year in year_list:
+        if a >=5:
+            a=0
+        colors.append(color_options[a])
+        a+=1
+    colors = list(colors)
 
-    return json.dumps([year_list, num_occurences, colors])
+    if len(year_list) == len(num_occurences) & len(num_occurences) == len(colors):
+        return json.dumps([year_list, num_occurences, colors])
+    else:
+        return json.dumps(["fuck"])
+
+
 
 @api.route('/states/') 
 def get_states():

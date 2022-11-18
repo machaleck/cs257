@@ -2,20 +2,30 @@ function initializeData() {
     loadStatesSelector();
     loadYearsSelector();
     loadIncidentTypesSelector();
+    numDisastersPerYear('numDis');
+    typesOfDisasters('typesOfDisasters');
+    numProgramsPerYear('numPerYear');
 }
 
-function get_url(selectors, url) {
+function get_url(selectors, selector_keys, url) {
     let a = 0;
-    for (let key in selectors) {
-        let selector = document.getElementById(selectors[key]);
-        console.log("hi")
-        if (!selector.value.includes("choose") || !selector.value == null) {
+    let baseURL = url;
+    let variableTracker = 0;
+    for (let i = 0; i < selectors.length; i++) {
+        let selector = document.getElementById(selectors[i]);
+        console.log("get_url")
+        if (!selector.value.includes("choose") ) {
+            if (variableTracker==0){
+                url += "?"
+                variableTracker +=1
+            }
+            
             let selector_value = selector.value;
             console.log(selector_value);
-            if (a != 0 && a < Object.keys(selectors).length) {
-                url += '&'
+            if (a != 0 && a < selectors.length) {
+                url += '&';
             }
-            url += key + '=' + selector_value;
+            url += selector_keys[i] + '=' + selector_value;
             a += 1
         }
     }
@@ -32,15 +42,12 @@ function getAPIBaseURL() {
 
 function numDisastersPerYear(chartId) {
 
-    let url = getAPIBaseURL() + '/disasters_year?';
-    selectors = {
-        'state': 'state_selector',
-        'start_year': 'start_year_selector',
-        'end_year': 'end_year_selector',
-        'incident_type': 'incident_type'
-    };
-    url = get_url(selectors, url)
-    console.log(url)
+    let url = getAPIBaseURL() + '/disasters_year';
+    selectors = ['state_selectors','start_year_selector','end_year_selector', 'incident_type'];
+    selector_key = ['state', 'start_year', 'end_year', 'incident_type']
+    url = get_url(selectors, selector_key, url);
+    console.log(url);
+    
 
     fetch(url, { method: 'get' })
 
@@ -54,43 +61,50 @@ function numDisastersPerYear(chartId) {
             years = yearData[0]
             numOccurences = yearData[1]
             barColors = yearData[2]
+            console.log(years, numOccurences, barColors)
 
-            new Chart(chartId, {
-                type: "bar",
-                data: {
-                    labels: years,
-                    datasets: [{
-                        backgroundColor: barColors,
-                        data: numOccurences
-                    }]
-                },
-                options: {
-                    legend: { display: false },
-                    title: {
-                        display: true,
-                        text: "Disasters Per Year"
-                    },
-                    scales: {
-                        xAxes: [{
-                            scaleLabel: {
-                                display:true, 
-                                labelString: 'Years'
-                            }
-                        }],
-                        yAxes: [{
-                            scaleLabel: {
-                                display:true, 
-                                labelString: '# Disasters'
-                            }
-                        }]
-                    }
-                }
-            });
+            disastersPerYear(years, numOccurences, barColors).destroy();
+            disastersPerYear(years,numOccurences,barColors)
         })
         // Log the error if anything went wrong during the fetch.
         .catch(function (error) {
             console.log(error);
         });
+}
+
+
+function disastersPerYear(years, numOccurences, barColors){
+    new Chart("numDis", {
+        type: "bar",
+        data: {
+            labels: years,
+            datasets: [{
+                backgroundColor: barColors,
+                data: numOccurences
+            }]
+        },
+        options: {
+            legend: { display: false },
+            title: {
+                display: true,
+                text: "Disasters Per Year"
+            },
+            scales: {
+                xAxes: [{
+                    scaleLabel: {
+                        display:true, 
+                        labelString: 'Years'
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display:true, 
+                        labelString: '# Disasters'
+                    }
+                }]
+            }
+        }
+    });
 }
 
 function typesOfDisasters(chartId) {
