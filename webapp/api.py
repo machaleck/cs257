@@ -23,7 +23,7 @@ def get_connection():
 
 
 @api.route('/disasters_year', methods= ['GET']) 
-def get_year_data():
+def get_incident_year_data():
     ''' Returns graph stuff.
 
         By default, the list is presented in graph order. 
@@ -66,7 +66,7 @@ def get_year_data():
         cursor.execute(query, where_clause_args)
         for row in cursor:
             if row[1] in years:
-                years[row[1]] = years[row[1]] + 1
+                years[row[1]] += 1
             else:
                 years.update({row[1]: 1})
         cursor.close()
@@ -89,10 +89,141 @@ def get_year_data():
 
     if len(year_list) == len(num_occurences) & len(num_occurences) == len(colors):
         return json.dumps([year_list, num_occurences, colors])
-    else:
-        return json.dumps(["fuck"])
+
+@api.route('/pie_chart', methods= ['GET']) 
+def get_pie_chart():
+    query = '''SELECT states.name, years.year, incident_types.incident
+                FROM incident_types, states, years, disasters
+                WHERE incident_types.id = disasters.incident_type_id
+                AND states.id = disasters.state_id
+                AND years.id = disasters.year'''
+    where_clause_args = []
+    state = flask.request.args.get("state")
+    start_year = flask.request.args.get("start_year")
+    end_year = flask.request.args.get("end_year")
+    incident_type = flask.request.args.get("incident_type")
+
+    if state is not None: 
+        query += ' AND states.name = %s'
+        where_clause_args.append(state)
+    if start_year is not None: 
+        query += ' AND years.year >= %s'
+        where_clause_args.append(start_year)
+    if end_year is not None: 
+        query += ' AND years.year <= %s'
+        where_clause_args.append(end_year)
+    if incident_type is not None: 
+        query += ' AND incident_types.incident = %s'
+        where_clause_args.append(incident_type)
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        cursor.execute(query, where_clause_args)
+        incident_types = {
+
+        }
+        for row in cursor:
+            if row[2] in incident_types:
+                incident_types[row[2]] += 1
+            else:
+                incident_types.update({row[2]: 1})
+            
+        cursor.close()
+        connection.close()
+    except Exception as e:
+        print(e, file=sys.stderr)
+    
+    incident_list = list(incident_types.keys())
+    num_occurences = list(incident_types.values())
+    color_options=["#b91d47","#00aba9","#2b5797","#e8c3b9","#1e7145",'#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff', '#000000'
+    ]
+    colors =[]
+    a=0
+    for item in incident_list:
+        colors.append(color_options[a])
+        a+=1
+
+    if len(incident_list) == len(num_occurences) & len(num_occurences) == len(colors):
+        return json.dumps([incident_list, num_occurences, colors])
 
 
+@api.route('/programs_year', methods= ['GET']) 
+def get_program_year_data():
+    ''' Returns graph stuff.
+
+        By default, the list is presented in graph order. 
+
+            http://.../disasters_year/
+
+        Returns an empty list if there's any database failure.
+    '''
+    query = '''SELECT states.name, years.year, incident_types.incident, ih_program, ia_program, pa_program, hm_program
+                FROM incident_types, states, years, disasters
+                WHERE incident_types.id = disasters.incident_type_id
+                AND states.id = disasters.state_id
+                AND years.id = disasters.year'''
+    where_clause_args = []
+    state = flask.request.args.get("state")
+    start_year = flask.request.args.get("start_year")
+    end_year = flask.request.args.get("end_year")
+    incident_type = flask.request.args.get("incident_type")
+
+    if state is not None: 
+        query += ' AND states.name = %s'
+        where_clause_args.append(state)
+    if start_year is not None: 
+        query += ' AND years.year >= %s'
+        where_clause_args.append(start_year)
+    if end_year is not None: 
+        query += ' AND years.year <= %s'
+        where_clause_args.append(end_year)
+    if incident_type is not None: 
+        query += ' AND incident_types.incident = %s'
+        where_clause_args.append(incident_type)
+
+    query += ' ORDER BY years.year'
+    years = {
+
+    }
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        cursor.execute(query, where_clause_args)
+        for row in cursor:
+            added_program_num = 0
+            if row[3] == 1: 
+                added_program_num += 1
+            if row[4] == 1:
+                added_program_num += 1
+            if row[5] == 1:
+                added_program_num += 1
+            if row[6] == 1:
+                added_program_num += 1
+            if row[1] in years:
+                years[row[1]] = years[row[1]] + added_program_num
+            else:
+                years.update({row[1]: added_program_num})
+            
+        cursor.close()
+        connection.close()
+    except Exception as e:
+        print(e, file=sys.stderr)
+    
+    year_list = list(years.keys())
+    num_occurences = list(years.values())
+    colors=[]
+
+    color_options = ["red", "green", "blue", "orange", "brown"]
+    a=0
+    for year in year_list:
+        if a >=5:
+            a=0
+        colors.append(color_options[a])
+        a+=1
+    colors = list(colors)
+
+    if len(year_list) == len(num_occurences) & len(num_occurences) == len(colors):
+        return json.dumps([year_list, num_occurences, colors])
 
 @api.route('/states/') 
 def get_states():
