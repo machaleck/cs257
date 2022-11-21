@@ -7,19 +7,15 @@
 window.onload = initialize;
 
 function initialize() {
+    //Loads dropdowns
     loadStatesSelector();
     loadYearsSelector();
     loadIncidentTypesSelector();
 
-    x = document.getElementById("shy")
+    //Hides tables
+    x = document.getElementById("hidden")
     x.style.display = "none"
-
-    let element = document.getElementById('state_selectors');
-    // if (element) {
-    //     element.onchange = onAuthorsSelectionChanged;
-    // }
 } 
-
 // Returns the base URL of the API, onto which endpoint
 // components can be appended.
 function getAPIBaseURL() {
@@ -29,31 +25,27 @@ function getAPIBaseURL() {
         + '/api';
     return baseURL;
 }
-
-
+//Function that hides the home page and replaces it with the table of data. 
 function hide() {  
     var hide = document.getElementsByClassName("hide_me")
-    var show = document.getElementById("shy")
+    var show = document.getElementById("hidden")
     for (let i = 0; i < hide.length; i++){
         console.log(hide[i])
         hide[i].style.display = "none"
     }
     show.style.display= "block"
 }
+//fetches data from the server and loads it into our datatable. 
 function loadTableData() {
-    console.log("Hi I'm load table and am running. ")
     let url = getAPIBaseURL() + '/natural_disasters?';
     selectors = { 'state' : 'state_selectors', 
     'start_year' : 'start_year_selector',
     'end_year' : 'end_year_selector',
     'incident_type' : 'incident_type'
     };
-
-    //Think about this code with a loop to see if it is more mantainable than the 4 seperate cases. 
     let a = 0;
     for (let key in selectors){
         let selector = document.getElementById(selectors[key]);
-        console.log("hi")
         if (!selector.value.includes("choose")) {
             let selector_value = selector.value;
             console.log(selector_value);
@@ -64,8 +56,7 @@ function loadTableData() {
             a+=1
         }
     }
-    console.log(url)
-    // Send the request to the books API /authors/ endpoint
+    // Send the request to our URL.
     fetch(url, { method: 'get' })
 
         // When the results come back, transform them from a JSON string into

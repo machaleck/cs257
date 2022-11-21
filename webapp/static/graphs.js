@@ -1,6 +1,7 @@
 let disasterChart;
 let programChart;
-let pieChart; 
+let pieChart;
+
 
 function initializeData() {
     loadStatesSelector();
@@ -10,9 +11,11 @@ function initializeData() {
     pieChartDisaster();
     numProgramsPerYear();
 }
+//Gets the desired URL. 
 function get_url(selectors, selector_keys, url) {
     let a = 0;
     let variableTracker = 0;
+    baseURL = url
     for (let i = 0; i < selectors.length; i++) {
         let selector = document.getElementById(selectors[i]);
         console.log("get_url")
@@ -31,8 +34,13 @@ function get_url(selectors, selector_keys, url) {
             a += 1
         }
     }
+    if (url == baseURL + "state=&start_year=&end_year=&incident_type=") {
+        url = baseURL
+    }
     return url;
 }
+// Returns the base URL of the API, onto which endpoint
+// components can be appended.
 function getAPIBaseURL() {
     let baseURL = window.location.protocol
         + '//' + window.location.hostname
@@ -40,16 +48,13 @@ function getAPIBaseURL() {
         + '/api';
     return baseURL;
 }
+//fetches data from the server and then creates the graph. 
 function numDisastersPerYear() {
 
     let url = getAPIBaseURL() + '/disasters_year';
     let selectors = ['state_selectors', 'start_year_selector', 'end_year_selector', 'incident_type'];
     let selector_key = ['state', 'start_year', 'end_year', 'incident_type']
     url = get_url(selectors, selector_key, url);
-
-    if (url == "http://127.0.0.1:5000/api/disasters_year?state=&start_year=&end_year=&incident_type=") {
-        url = "http://127.0.0.1:5000/api/disasters_year"
-    }
 
     fetch(url, { method: 'get' })
 
@@ -64,7 +69,7 @@ function numDisastersPerYear() {
             numOccurences = yearData[1]
             barColors = yearData[2]
 
-            disastersPerYear(years, numOccurences, barColors);
+            disastersPerYearHelper(years, numOccurences, barColors);
 
         })
         // Log the error if anything went wrong during the fetch.
@@ -72,39 +77,10 @@ function numDisastersPerYear() {
             console.log(error);
         });
 }
-function numProgramsPerYear() {
-
-    let url = getAPIBaseURL() + '/programs_year';
-    let selectors = ['state_selectors', 'start_year_selector', 'end_year_selector', 'incident_type'];
-    let selector_key = ['state', 'start_year', 'end_year', 'incident_type']
-    url = get_url(selectors, selector_key, url);
-
-    if (url == "http://127.0.0.1:5000/api/programs_year?state=&start_year=&end_year=&incident_type=") {
-        url = "http://127.0.0.1:5000/api/programs_year"
-    }
-
-    fetch(url, { method: 'get' })
-
-        // When the results come back, transform them from a JSON string into
-        // a Javascript object (in this case, a list of author dictionaries).
-        .then((response) => response.json())
-        // Once you have your list of author dictionaries, use it to build
-        // an HTML table displaying the author names and lifespan.
-        .then(function (yearData) {
-            // Add the <option> elements to the <select> element
-            years = yearData[0]
-            numPrograms = yearData[1]
-            barColors = yearData[2]
-
-            programsChart(years, numPrograms, barColors);
-
-        })
-        // Log the error if anything went wrong during the fetch.
-        .catch(function (error) {
-            console.log(error);
-        });
-}
-function disastersPerYear(years, numOccurences, barColors) {
+//Creates the graph in numDisastersPerYear
+function disastersPerYearHelper(years, numOccurences, barColors) {
+    
+    //Destroys the previous version of the graph it was already created.
     if (disasterChart) {
         disasterChart.destroy();
     }
@@ -139,17 +115,14 @@ function disastersPerYear(years, numOccurences, barColors) {
         }
     });
 }
+//fetches data from the server and then creates the graph. 
+function numProgramsPerYear() {
 
-function pieChartDisaster() {
-
-    let url = getAPIBaseURL() + '/pie_chart';
+    let url = getAPIBaseURL() + '/programs_year';
     let selectors = ['state_selectors', 'start_year_selector', 'end_year_selector', 'incident_type'];
     let selector_key = ['state', 'start_year', 'end_year', 'incident_type']
     url = get_url(selectors, selector_key, url);
 
-    if (url == "http://127.0.0.1:5000/api/pie_chart?state=&start_year=&end_year=&incident_type=") {
-        url = "http://127.0.0.1:5000/api/pie_chart"
-    }
 
     fetch(url, { method: 'get' })
 
@@ -158,43 +131,22 @@ function pieChartDisaster() {
         .then((response) => response.json())
         // Once you have your list of author dictionaries, use it to build
         // an HTML table displaying the author names and lifespan.
-        .then(function (incident_data) {
+        .then(function (yearData) {
             // Add the <option> elements to the <select> element
-            incidents = incident_data[0];
-            numOccurences = incident_data[1];
-            colors = incident_data[2];
+            years = yearData[0]
+            numPrograms = yearData[1]
+            barColors = yearData[2]
 
-            pie_chart_helper(incidents, numOccurences, colors);
+            programsHelper(years, numPrograms, barColors);
 
         })
         // Log the error if anything went wrong during the fetch.
         .catch(function (error) {
             console.log(error);
         });
-    }
-function pie_chart_helper(incident_types, numOccurences, colors) {
-    if (pieChart){
-        pieChart.destroy();
-    }
-    pieChart = new Chart("typesOfDisasters", {
-        type: "pie",
-        data: {
-            labels: incident_types,
-            datasets: [{
-                backgroundColor: colors,
-                data: numOccurences
-            }]
-        },
-        options: {
-            title: {
-                display: true,
-            }
-        }
-    });
 }
-
-
-function programsChart(years, numPrograms, barColors) {
+//Creates the graph in numProgramsPerYear
+function programsHelper(years, numPrograms, barColors) {
 
     if (programChart) {
         programChart.destroy();
@@ -213,6 +165,57 @@ function programsChart(years, numPrograms, barColors) {
             legend: { display: false },
             title: {
                 display: true
+            }
+        }
+    });
+}
+//fetches data from the server and then creates the graph. 
+function pieChartDisaster() {
+
+    let url = getAPIBaseURL() + '/pie_chart';
+    let selectors = ['state_selectors', 'start_year_selector', 'end_year_selector', 'incident_type'];
+    let selector_key = ['state', 'start_year', 'end_year', 'incident_type']
+    url = get_url(selectors, selector_key, url);
+
+    fetch(url, { method: 'get' })
+
+        // When the results come back, transform them from a JSON string into
+        // a Javascript object (in this case, a list of author dictionaries).
+        .then((response) => response.json())
+        // Once you have your list of author dictionaries, use it to build
+        // an HTML table displaying the author names and lifespan.
+        .then(function (incident_data) {
+
+            incidents = incident_data[0];
+            numOccurences = incident_data[1];
+            colors = incident_data[2];
+
+            pieChartHelper(incidents, numOccurences, colors);
+
+        })
+        // Log the error if anything went wrong during the fetch.
+        .catch(function (error) {
+            console.log(error);
+        });
+}
+//Creates the graph in pieChartDisaster
+function pieChartHelper(incident_types, numOccurences, colors) {
+    //Destroys the previous version of the graph it was already created.
+    if (pieChart) {
+        pieChart.destroy();
+    }
+    pieChart = new Chart("typesOfDisasters", {
+        type: "pie",
+        data: {
+            labels: incident_types,
+            datasets: [{
+                backgroundColor: colors,
+                data: numOccurences
+            }]
+        },
+        options: {
+            title: {
+                display: true,
             }
         }
     });
