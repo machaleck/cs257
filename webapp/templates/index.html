@@ -14,8 +14,8 @@
     <script type="text/javascript" language="javascript"
         src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
     <script>$(document).ready(function () {
-        $('#example').DataTable();
-    });</script>
+            $('#example').DataTable();
+        });</script>
     <title>Natural Disasters Database</title>
     <link rel="icon" type="image/x-icon" href="../static/images/lightning_bolt.png">
 </head>
@@ -51,34 +51,37 @@
                 </select>
                 </select>
                 <h3>End Year</h3>
-                <select id= "end_year_selector" class="year_selector form-select form-select-sm" aria-label="Default select example">
+                <select id="end_year_selector" class="year_selector form-select form-select-sm"
+                    aria-label="Default select example">
                 </select>
 
                 <h3>Incident Type</h3>
                 <select id="incident_type" class="form-select form-select-sm" aria-label="Default select example">
                 </select>
-                <button type="button" onclick="loadTableData(), hide()"class="my-2 btn btn-outline-primary btn-sm">Search</button>
+                <button type="button" onclick="loadTableData(), hide()"
+                    class="my-2 btn btn-outline-primary btn-sm">Search</button>
             </div>
             <div class="col-8">
-                <h1 class ="hide_me">Our Data</h1>
-                <p class ="hide_me">Our dataset contains data from the Federal Emergency Management Agency (FEMA) relating to natural
+                <h1 class="hide_me">Our Data</h1>
+                <p class="hide_me">Our dataset contains data from the Federal Emergency Management Agency (FEMA)
+                    relating to natural
                     disasters occurring in the US over time. It contains information about federal aid programs that
                     were declared as well as the time and length of each disaster. You can access our data <a href="https://www.kaggle.com/datasets/headsortails/us-natural-disaster-declarations?select=us_disaster_declarations.csv
                     ">here</a>.</p>
-                <img class ="hide_me" src="../static/images/storm.jpeg"
-                    width="1000"
-                    height="600"
-                    alt="Image of a storm">
+                <img class="hide_me" src="../static/images/storm.jpeg" width="1000" height="600" alt="Image of a storm">
                 <div id="hidden">
-                <h1>Search Results</h1>
-                <p>Thanks for searching our webpage! To better understand our data, you can visit our <a href='https://www.kaggle.com/datasets/headsortails/us-natural-disaster-declarations?select=us_disaster_declarations.csv'>dataset</a> for more information. Our programs column below uses the following abbreviations to indicate a program was declared for the disaster: </p>
-                <ul>
-                    <li>ih : Individuals and Households program </li>
-                    <li>ia : Individual Assistance program</li>
-                    <li>pa : Public Assistance program</li>
-                    <li>hm : Hazard Mitigation program</li>
-                </ul>
-                <table id="example" class="table table-striped table-sm" style="width:100%">
+                    <h1>Search Results</h1>
+                    <p>Thanks for searching our webpage! To better understand our data, you can visit our <a
+                            href='https://www.kaggle.com/datasets/headsortails/us-natural-disaster-declarations?select=us_disaster_declarations.csv'>dataset</a>
+                        for more information. Our programs column below uses the following abbreviations to indicate a
+                        program was declared for the disaster: </p>
+                    <ul>
+                        <li>ih : Individuals and Households program </li>
+                        <li>ia : Individual Assistance program</li>
+                        <li>pa : Public Assistance program</li>
+                        <li>hm : Hazard Mitigation program</li>
+                    </ul>
+                    <table id="example" class="table table-striped table-sm" style="width:100%">
                         <thead>
                             <tr>
                                 <th class="th-sm">State <button>&#8597;</button></th>

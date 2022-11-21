@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Natural Disasters Database</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="../static/graphs.js"></script>
-    <script src ="../static/set_up.js"></script>
+    <script src="../static/set_up.js"></script>
+    <link rel="icon" type="image/x-icon" href="../static/images/lightning_bolt.png">
 </head>
 
-<body onload= "initializeData();">
+<body onload="initializeData();">
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand">Natural Disaster Records</a>
@@ -42,15 +43,17 @@
                 </select>
                 </select>
                 <h3>End Year</h3>
-                <select id= "end_year_selector" class="year_selector form-select form-select-sm" aria-label="Default select example">
+                <select id="end_year_selector" class="year_selector form-select form-select-sm"
+                    aria-label="Default select example">
                 </select>
 
                 <h3>Incident Type</h3>
                 <select id="incident_type" class="form-select form-select-sm" aria-label="Default select example">
                 </select>
-                <button type="button" onclick="numDisastersPerYear();numProgramsPerYear();pieChartDisaster();"class="my-2 btn btn-outline-primary btn-sm">Search</button>
+                <button type="button" onclick="numDisastersPerYear();numProgramsPerYear();pieChartDisaster();"
+                    class="my-2 btn btn-outline-primary btn-sm">Search</button>
             </div>
-            
+
             <div class="col-5">
                 <h1>Data Analysis</h1>
                 <h3>Number of Disasters by Year</h3>
@@ -65,17 +68,18 @@
                 <canvas id="numPerYear" style="width:100%; max-width: 600px">
                     <!--Example graphs taken from https://www.w3schools.com/js/tryit.asp?filename=tryai_chartjs_lines-->
                 </canvas>
-                
+
             </div>
         </div>
         <div class="row">
             <div class="col-2"></div>
             <div class="col-10">
-            <h3>Types of Disasters</h3>
-            <canvas id="typesOfDisasters" style="width:100%;max-width:700px;"></canvas>
-            <h3>These graphs will adapt to your search! By default they show you the entire dataset but choose your filters to see how many disasters occur in your state!</h3>
+                <h3>Types of Disasters</h3>
+                <canvas id="typesOfDisasters" style="width:100%;max-width:700px;"></canvas>
+                <h3>These graphs will adapt to your search! By default they show you the entire dataset but choose your
+                    filters to see how many disasters occur in your state!</h3>
 
-        </div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

@@ -17,11 +17,11 @@ def home():
 
 @app.route('/data_analysis')
 def graphs():
-    return flask.render_template('mockup1.html')
+    return flask.render_template('data_analysis.html')
 
 @app.route('/about_us')
 def aboutUs():
-    return flask.render_template('mockup2.html')
+    return flask.render_template('about_us.html')
 
 @app.route('/natural_disasters')
 def search():
