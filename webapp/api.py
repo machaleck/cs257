@@ -115,13 +115,13 @@ def get_pie_chart():
     if incident_type is not None: 
         query += ' AND incident_types.incident = %s'
         where_clause_args.append(incident_type)
+
+    incident_types = {}
     try:
         connection = get_connection()
         cursor = connection.cursor()
         cursor.execute(query, where_clause_args)
-        incident_types = {
 
-        }
         for row in cursor:
             if row[2] in incident_types:
                 incident_types[row[2]] += 1
