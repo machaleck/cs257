@@ -1,7 +1,7 @@
 '''
     api.py
-    Jeff Ondich, 25 April 2016
-    Updated 8 November 2021
+    Ryan Dunn, Kyle Machalec
+    Updated November 20th, 2022
 
 '''
 import sys
@@ -311,7 +311,7 @@ def get_incidents():
 @api.route('/natural_disasters', methods= ['GET'])
 def get_disasters():
     
-    query = '''SELECT states.name, declaration_titles.title, incident_types.incident, years.year, disasters.ih_program, disasters.ia_program, disasters.pa_program, disasters.hm_program
+    query = '''SELECT DISTINCT states.name, declaration_titles.title, incident_types.incident, years.year, disasters.ih_program, disasters.ia_program, disasters.pa_program, disasters.hm_program
                FROM incident_types, states, declaration_titles, years, disasters
                WHERE incident_types.id = disasters.incident_type_id
                 AND states.id = disasters.state_id
