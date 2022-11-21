@@ -13,7 +13,7 @@ import api
 app = flask.Flask(__name__, static_folder='static', template_folder='templates')
 app.register_blueprint(api.api, url_prefix='/api')
 
-@app.route('/') 
+@app.route('/')
 def home():
     return flask.render_template('index.html')
 
