@@ -13,7 +13,4 @@ FEATURES CURRENTLY WORKING:
     We recognize that the existence of this feature is not obvious to the user yet. We plan to add icons 
     next to each column header that will make this feature more obvious.
 - Beautiful about us page
-
-FEATURES NOT YET WORKING:
-- Data analysis page has javascript graphs with filler data
-- Search function does not work on the data analysis page. Search function is intended to modify graphs in the future.
+- Data analysis page has javascript graphs with data that can be filtered by searches.
