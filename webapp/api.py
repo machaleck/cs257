@@ -43,16 +43,16 @@ def get_incident_year_data():
     end_year = flask.request.args.get("end_year")
     incident_type = flask.request.args.get("incident_type")
 
-    if state is not None: 
+    if state is not None and state is not "": 
         query += ' AND states.name = %s'
         where_clause_args.append(state)
-    if start_year is not None: 
+    if start_year is not None and start_year is not "": 
         query += ' AND years.year >= %s'
         where_clause_args.append(start_year)
-    if end_year is not None: 
+    if end_year is not None and end_year is not "": 
         query += ' AND years.year <= %s'
         where_clause_args.append(end_year)
-    if incident_type is not None: 
+    if incident_type is not None and incident_type is not "": 
         query += ' AND incident_types.incident = %s'
         where_clause_args.append(incident_type)
 
@@ -103,16 +103,17 @@ def get_pie_chart():
     end_year = flask.request.args.get("end_year")
     incident_type = flask.request.args.get("incident_type")
 
-    if state is not None: 
+    
+    if state is not None and state is not "": 
         query += ' AND states.name = %s'
         where_clause_args.append(state)
-    if start_year is not None: 
+    if start_year is not None and start_year is not "": 
         query += ' AND years.year >= %s'
         where_clause_args.append(start_year)
-    if end_year is not None: 
+    if end_year is not None and end_year is not "": 
         query += ' AND years.year <= %s'
         where_clause_args.append(end_year)
-    if incident_type is not None: 
+    if incident_type is not None and incident_type is not "": 
         query += ' AND incident_types.incident = %s'
         where_clause_args.append(incident_type)
 
@@ -168,16 +169,16 @@ def get_program_year_data():
     end_year = flask.request.args.get("end_year")
     incident_type = flask.request.args.get("incident_type")
 
-    if state is not None: 
+    if state is not None and state is not "": 
         query += ' AND states.name = %s'
         where_clause_args.append(state)
-    if start_year is not None: 
+    if start_year is not None and start_year is not "": 
         query += ' AND years.year >= %s'
         where_clause_args.append(start_year)
-    if end_year is not None: 
+    if end_year is not None and end_year is not "": 
         query += ' AND years.year <= %s'
         where_clause_args.append(end_year)
-    if incident_type is not None: 
+    if incident_type is not None and incident_type is not "": 
         query += ' AND incident_types.incident = %s'
         where_clause_args.append(incident_type)
 
