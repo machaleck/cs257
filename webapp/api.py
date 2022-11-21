@@ -414,5 +414,25 @@ REQUEST: /incident_types
 RESPONSE: A JSON list of incident types sorted alphabetically.
 
 
+REQUEST: /disasters_year?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident_requested}
 
+RESPONSE: A JSON list of lists containing years, number of disasters for each year, and color names
+
+Example: /programs_year?state=MS&start_year=2009&end_year=2010
+[[2009, 2010], [11, 18], ["red", "green"]]
+
+
+REQUEST: /pie_chart?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident_requested}
+
+RESPONSE: A JSON list of lists containing incident types, number of times each incident occurred, and colors in hexadecimal
+
+EXAMPLE: [["Severe Storm(s)"], [29], ["#b91d47"]]
+
+
+REQUEST: /programs_year?state={state_requested}&start_year={year_requested}&end_year={year_requested}&incident_type={incident_requested}
+
+RESPONSE: A JSON list of lists containing years, number of programs that were enacted each year, and color names
+
+Example: /programs_year?state=MS&start_year=2009&end_year=2010
+[[2009, 2010], [22, 46], ["red", "green"]]
 '''
