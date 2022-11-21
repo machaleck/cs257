@@ -2,7 +2,7 @@ let disasterChart;
 let programChart;
 let pieChart;
 
-
+//Loads the menus and creates the default charts containing the entire data set. 
 function initializeData() {
     loadStatesSelector();
     loadYearsSelector();
@@ -15,14 +15,13 @@ function initializeData() {
 function get_url(selectors, selector_keys, url) {
     let a = 0;
     let variableTracker = 0;
-    baseURL = url
+    baseURL = url;
     for (let i = 0; i < selectors.length; i++) {
         let selector = document.getElementById(selectors[i]);
-        console.log("get_url")
         if (!selector.value.includes("choose") || !selector.value == null) {
             if (variableTracker == 0) {
-                url += "?"
-                variableTracker += 1
+                url += "?";
+                variableTracker += 1;
             }
 
             let selector_value = selector.value;
@@ -31,11 +30,11 @@ function get_url(selectors, selector_keys, url) {
                 url += '&';
             }
             url += selector_keys[i] + '=' + selector_value;
-            a += 1
+            a += 1;
         }
     }
-    if (url == baseURL + "state=&start_year=&end_year=&incident_type=") {
-        url = baseURL
+    if (url == baseURL + "?state=&start_year=&end_year=&incident_type=") {
+        url = baseURL;
     }
     return url;
 }
@@ -53,7 +52,7 @@ function numDisastersPerYear() {
 
     let url = getAPIBaseURL() + '/disasters_year';
     let selectors = ['state_selectors', 'start_year_selector', 'end_year_selector', 'incident_type'];
-    let selector_key = ['state', 'start_year', 'end_year', 'incident_type']
+    let selector_key = ['state', 'start_year', 'end_year', 'incident_type'];
     url = get_url(selectors, selector_key, url);
 
     fetch(url, { method: 'get' })
@@ -65,9 +64,9 @@ function numDisastersPerYear() {
         // an HTML table displaying the author names and lifespan.
         .then(function (yearData) {
             // Add the <option> elements to the <select> element
-            years = yearData[0]
-            numOccurences = yearData[1]
-            barColors = yearData[2]
+            years = yearData[0];
+            numOccurences = yearData[1];
+            barColors = yearData[2];
 
             disastersPerYearHelper(years, numOccurences, barColors);
 
@@ -120,7 +119,7 @@ function numProgramsPerYear() {
 
     let url = getAPIBaseURL() + '/programs_year';
     let selectors = ['state_selectors', 'start_year_selector', 'end_year_selector', 'incident_type'];
-    let selector_key = ['state', 'start_year', 'end_year', 'incident_type']
+    let selector_key = ['state', 'start_year', 'end_year', 'incident_type'];
     url = get_url(selectors, selector_key, url);
 
 
@@ -133,9 +132,9 @@ function numProgramsPerYear() {
         // an HTML table displaying the author names and lifespan.
         .then(function (yearData) {
             // Add the <option> elements to the <select> element
-            years = yearData[0]
-            numPrograms = yearData[1]
-            barColors = yearData[2]
+            years = yearData[0];
+            numPrograms = yearData[1];
+            barColors = yearData[2];
 
             programsHelper(years, numPrograms, barColors);
 
@@ -174,7 +173,7 @@ function pieChartDisaster() {
 
     let url = getAPIBaseURL() + '/pie_chart';
     let selectors = ['state_selectors', 'start_year_selector', 'end_year_selector', 'incident_type'];
-    let selector_key = ['state', 'start_year', 'end_year', 'incident_type']
+    let selector_key = ['state', 'start_year', 'end_year', 'incident_type'];
     url = get_url(selectors, selector_key, url);
 
     fetch(url, { method: 'get' })

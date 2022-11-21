@@ -86,7 +86,7 @@ function loadTableData() {
             console.log(error);    
         });
 }
-
+//loads the state dropdown
 function loadStatesSelector() {
     let url = getAPIBaseURL() + '/states/';
 
@@ -122,7 +122,7 @@ function loadStatesSelector() {
             console.log(error);
         });
 }
-
+//loads the year dropdown
 function loadYearsSelector() {
     let url = getAPIBaseURL() + '/years/';
 
@@ -162,7 +162,7 @@ function loadYearsSelector() {
             console.log(error);
         });
 }
-
+//loads the incident type dropdown
 function loadIncidentTypesSelector() {
     let url = getAPIBaseURL() + '/incidents/';
 
@@ -200,41 +200,3 @@ function loadIncidentTypesSelector() {
             console.log(error);
         });
 }
-// function onAuthorsSelectionChanged() {
-//     let element = document.getElementById('state_selector');
-//     if (!element) {
-//         return;
-//     }
-//     let authorID = element.value; 
-
-//     let url = getAPIBaseURL() + '/books/author/' + authorID;
-
-//     fetch(url, {method: 'get'})
-
-//     .then((response) => response.json())
-
-//     .then(function(books) {
-//         let tableBody = '';
-//         for (let k = 0; k < books.length; k++) {
-//             let book = books[k];
-//             tableBody += '<tr>'
-//                             + '<td>' + book['title'] + '</td>'
-//                             + '<td>' + book['publication_year'] + '</td>'
-//                             + '</tr>\n';
-//         }
-
-//         // Put the table body we just built inside the table that's already on the page.
-//         let booksTable = document.getElementById('books_table');
-//         if (booksTable) {
-//             booksTable.innerHTML = tableBody;
-//         }
-//     })
-
-//     .catch(function(error) {
-//         console.log(error);
-//     });
-// }
-
-
-
-///natural_disasters?state=NY&start_year=2002&end_year=2020&incident_type=incident&ih_program=1&ia_program=1&pa_program=1&hm_program=1
