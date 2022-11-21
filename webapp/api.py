@@ -24,13 +24,9 @@ def get_connection():
 
 @api.route('/disasters_year', methods= ['GET']) 
 def get_incident_year_data():
-    ''' Returns graph stuff.
-
-        By default, the list is presented in graph order. 
-
+    ''' Returns data for our graph # of incidents by year. 
             http://.../disasters_year/
-
-        Returns an empty list if there's any database failure.
+            Data is returned in the following format of a list of three lists: [year_list, num_occurences, colors]
     '''
     query = '''SELECT states.name, years.year, incident_types.incident
                 FROM incident_types, states, years, disasters
@@ -92,6 +88,10 @@ def get_incident_year_data():
 
 @api.route('/pie_chart', methods= ['GET']) 
 def get_pie_chart():
+    ''' Returns data for our pie chart containing information about the number of incidents. 
+                Data is recieved in the following format: [incident_list, num_occurences, colors]
+                http://.../pie_chart/'''
+
     query = '''SELECT states.name, years.year, incident_types.incident
                 FROM incident_types, states, years, disasters
                 WHERE incident_types.id = disasters.incident_type_id
@@ -147,16 +147,14 @@ def get_pie_chart():
     if len(incident_list) == len(num_occurences) & len(num_occurences) == len(colors):
         return json.dumps([incident_list, num_occurences, colors])
 
-
 @api.route('/programs_year', methods= ['GET']) 
 def get_program_year_data():
-    ''' Returns graph stuff.
+    ''' Returns program by year data.
 
-        By default, the list is presented in graph order. 
+        Returns three lists in the following order. [year_list, num_occurences, colors]
 
-            http://.../disasters_year/
+            http://.../program_year
 
-        Returns an empty list if there's any database failure.
     '''
     query = '''SELECT states.name, years.year, incident_types.incident, ih_program, ia_program, pa_program, hm_program
                 FROM incident_types, states, years, disasters
@@ -375,8 +373,6 @@ def get_disasters():
         connection.close()
     except Exception as e:
         print(e, file=sys.stderr)
-
-    #print(disaster_list)
     return json.dumps(disaster_list)
 
 @api.route('/help')
